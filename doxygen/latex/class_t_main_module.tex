@@ -1,0 +1,568 @@
+\hypertarget{class_t_main_module}{}\doxysection{TMain\+Module Class Reference}
+\label{class_t_main_module}\index{TMainModule@{TMainModule}}
+
+
+{\ttfamily \#include $<$main.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_main_module_a29326129df7647e25b90ff6d654fe61c}{TMain\+Module}} (HINSTANCE \mbox{\hyperlink{immobiliare_8cpp_a44f41244c97693b2fbd5244bcb1e86ec}{h\+Inst}}, HWND h\+Wnd)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_main_module_a02ee258f3422a195fab6308fe6a79955}{$\sim$\+TMain\+Module}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_main_module_a06f538373f678943f1dcb4d8277d6c7c}{DBCities\+Load\+From\+File}} (LPCSTR \mbox{\hyperlink{libguidll_8h_ac8887f0428f801820b8018d62f4d1062}{p\+File\+Name}})
+\begin{DoxyCompactList}\small\item\em Loads from file a Cities archive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_main_module_ab8d6aa991da8cea3ccc15c82f9fdc75e}{Show\+About\+Box}} ()
+\begin{DoxyCompactList}\small\item\em Display the About Box. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_main_module_ada18486c6ce1332e7ca1fc2117ae1e96}{Show\+Form\+Debug}} ()
+\begin{DoxyCompactList}\small\item\em Shows the Debug form. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_main_module_a7b9a4ef3cc9ec20e03a5603b1da62c45}{Debug\+Print}} (std\+::string str\+Msg)
+\begin{DoxyCompactList}\small\item\em Prints a string on the Debug form. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_main_module_acd1bf132795bc19bf33ab66aaeb38f45}{Show\+Form\+Assets}} ()
+\begin{DoxyCompactList}\small\item\em Shows the Assets form. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_main_module_a028dc194aabdc33a000241ed369f1303}{Show\+Form\+Customers}} ()
+\begin{DoxyCompactList}\small\item\em Shows the Customers form. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_main_module_a95798f31459a795800b57589cece38ba}{Create\+Assets\+Archive}} ()
+\begin{DoxyCompactList}\small\item\em Creates an empty Assets archive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_main_module_a5cc0b5cc5b4a9c06152b91a9aa96cb04}{Create\+Customers\+Archive}} ()
+\begin{DoxyCompactList}\small\item\em Creates and empty Customers archive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_main_module_aa52b774274445974f0528c77676a9fb9}{Open\+Assets\+Archive}} ()
+\begin{DoxyCompactList}\small\item\em Opens an Assets archive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_main_module_a1d014af09f820d0238985375794c8592}{Open\+Customers\+Archive}} ()
+\begin{DoxyCompactList}\small\item\em Opens a Customers archive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_main_module_a87835149e492f4e4f896e854cf2ce326}{Save\+Assets\+Archive}} ()
+\begin{DoxyCompactList}\small\item\em Saves an Assets archive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_main_module_ab38fcf685f63a96214c4f5e11dd95992}{Save\+Customers\+Archive}} ()
+\begin{DoxyCompactList}\small\item\em Saves a Customers archive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_main_module_a6dab8c0658f8c9ea9d8d90d8ec59cda4}{Show\+Form\+Find\+Assets}} ()
+\begin{DoxyCompactList}\small\item\em Shows the \char`\"{}\+Find\+Assets\char`\"{} form. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_main_module_a37af1b5ee6f94cb2af7ae818a645cd7e}{Show\+Form\+Find\+Customers}} ()
+\begin{DoxyCompactList}\small\item\em Shows the \char`\"{}\+Find\+Customers\char`\"{} form. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_main_module_abd6f19d8d7a09413c57d2aa207fc73fe}{Show\+Form\+Queries}} ()
+\begin{DoxyCompactList}\small\item\em Shows the \char`\"{}\+Queries\char`\"{} form. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_main_module_aae56e13b83a621e35b29bd3b13247187}{Msg\+Assets\+DBModify}} ()
+\begin{DoxyCompactList}\small\item\em Invoked when Assets archive has been modified. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_main_module_a97a449ee491e98daaa82befdd041f0e9}{Msg\+Customers\+DBModify}} ()
+\begin{DoxyCompactList}\small\item\em Invoked when Customers archive has benn modified. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_main_module_af8bc09f65bcd8693756d03a0baba5be2}{Is\+Dirty}} ()
+\begin{DoxyCompactList}\small\item\em Checks if any archive has been modified. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_main_module_a1ccbd82a82fd1f257b94dda7b487e2de}{Can\+Close}} ()
+\begin{DoxyCompactList}\small\item\em Invoked on applicaton closing. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} \mbox{\hyperlink{class_t_main_module_a39646822fb1076f7c01bb9af3b00a8a1}{Get\+Form\+Assets}} ()
+\item 
+\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} \mbox{\hyperlink{class_t_main_module_a47460029fe8fd4f70c757db87c15e036}{Get\+Form\+Customers}} ()
+\item 
+void \mbox{\hyperlink{class_t_main_module_abf485c684ad443c51c124d219aa4983d}{Draw\+Image}} ()
+\begin{DoxyCompactList}\small\item\em Draws an image on client area. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_main_module_a41f7aae8e98a5ac4a6abc642e579f365}{debug\+\_\+\+Sort\+Strings}} ()
+\begin{DoxyCompactList}\small\item\em Test Unit procedure. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_main_module_a238d4bfaa8129d355177af0fb78bb34b}{debug\+\_\+\+Sort\+Integers}} ()
+\begin{DoxyCompactList}\small\item\em Test Unit procedure. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_main_module_ab7c14ee68d66daadd0d58c4ef6a12d9e}{debug\+\_\+\+Print\+Cities}} ()
+\begin{DoxyCompactList}\small\item\em Test Unit procedure. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_main_module_a78ee9963f01fe27ef512add0c3fd0233}{debug\+\_\+\+Print\+Assets}} ()
+\begin{DoxyCompactList}\small\item\em Test Unit procedure. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_main_module_a0068a72e0deab68303d64599d895dbb9}{debug\+\_\+\+Print\+Customers}} ()
+\begin{DoxyCompactList}\small\item\em Test Unit procedure. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_main_module_a8efb0819554ae805118f60b3bd307562}{debug\+\_\+\+More\+Testings}} ()
+\begin{DoxyCompactList}\small\item\em Test Unit procedure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_t_main_module_acfce9678c02b898aa7aaa71a5861e661}{Setup}} ()
+\begin{DoxyCompactList}\small\item\em Setup. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_main_module_ab22ec2398e97f9044c0a2e2f7cca1544}{Cleanup}} ()
+\begin{DoxyCompactList}\small\item\em Cleanup. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_main_module_a612952d18634f16c46de402beea285c9}{Load\+Image}} ()
+\begin{DoxyCompactList}\small\item\em Loads a bitmap from application resource. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+HWND \mbox{\hyperlink{class_t_main_module_a8094d43d98828a8f4a17fe7344582902}{m\+\_\+h\+Wnd}}
+\item 
+HBITMAP \mbox{\hyperlink{class_t_main_module_a0f8316c2d1f670a1d8b1e415e2c5250e}{m\+\_\+h\+Bmp\+Back}}
+\item 
+HINSTANCE \mbox{\hyperlink{class_t_main_module_a3e0787c2baa85c047a51ddd671a737a5}{m\+\_\+h\+Inst}}
+\item 
+HINSTANCE \mbox{\hyperlink{class_t_main_module_aeb8b79db2e3502bd32ddb2e39d904727}{m\+\_\+h\+Lib\+Gui}}
+\item 
+\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} \mbox{\hyperlink{class_t_main_module_a8210f94242bf68e70cdf17fd4934e135}{m\+\_\+p\+DB}}
+\item 
+\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} \mbox{\hyperlink{class_t_main_module_aacb4a6eb739f347df1d9e0fa7b7e70dc}{m\+\_\+p\+Form\+Debug}}
+\item 
+\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} \mbox{\hyperlink{class_t_main_module_a68f7631ecd5f0155e576269fd923e8b2}{m\+\_\+p\+Form\+Assets}}
+\item 
+\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} \mbox{\hyperlink{class_t_main_module_acf56f9e1dfd639e89cdd323788b86da4}{m\+\_\+p\+Form\+Customers}}
+\item 
+\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} \mbox{\hyperlink{class_t_main_module_a3fb37077b5a0a82563454be6f80e0455}{m\+\_\+p\+Form\+Find\+Assets}}
+\item 
+\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} \mbox{\hyperlink{class_t_main_module_a405fca314d5b06650c084b981f8e52f7}{m\+\_\+p\+Form\+Find\+Customers}}
+\item 
+\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} \mbox{\hyperlink{class_t_main_module_a235e9d1c67245d6a60b2afc1116bc09a}{m\+\_\+p\+Form\+Queries}}
+\item 
+bool \mbox{\hyperlink{class_t_main_module_aaaa76e58401d1c81d5613634a2b340c5}{m\+\_\+b\+Assets\+DBModify}}
+\item 
+bool \mbox{\hyperlink{class_t_main_module_ac0219f654d86302859e7f5946d3f76a8}{m\+\_\+b\+Customers\+DBModify}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_main_module_a29326129df7647e25b90ff6d654fe61c}\label{class_t_main_module_a29326129df7647e25b90ff6d654fe61c}} 
+\index{TMainModule@{TMainModule}!TMainModule@{TMainModule}}
+\index{TMainModule@{TMainModule}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{TMainModule()}{TMainModule()}}
+{\footnotesize\ttfamily TMain\+Module\+::\+TMain\+Module (\begin{DoxyParamCaption}\item[{HINSTANCE}]{h\+Inst,  }\item[{HWND}]{h\+Wnd }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em h\+Inst} & Main application handle \\
+\hline
+{\em h\+Wnd} & Main window handle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_main_module_a02ee258f3422a195fab6308fe6a79955}\label{class_t_main_module_a02ee258f3422a195fab6308fe6a79955}} 
+\index{TMainModule@{TMainModule}!````~TMainModule@{$\sim$TMainModule}}
+\index{````~TMainModule@{$\sim$TMainModule}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{$\sim$TMainModule()}{~TMainModule()}}
+{\footnotesize\ttfamily TMain\+Module\+::$\sim$\+TMain\+Module (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\DoxyHorRuler{0}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_main_module_a1ccbd82a82fd1f257b94dda7b487e2de}\label{class_t_main_module_a1ccbd82a82fd1f257b94dda7b487e2de}} 
+\index{TMainModule@{TMainModule}!CanClose@{CanClose}}
+\index{CanClose@{CanClose}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{CanClose()}{CanClose()}}
+{\footnotesize\ttfamily bool TMain\+Module\+::\+Can\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Invoked on applicaton closing. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_main_module_ab22ec2398e97f9044c0a2e2f7cca1544}\label{class_t_main_module_ab22ec2398e97f9044c0a2e2f7cca1544}} 
+\index{TMainModule@{TMainModule}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{Cleanup()}{Cleanup()}}
+{\footnotesize\ttfamily void TMain\+Module\+::\+Cleanup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Cleanup. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_main_module_a95798f31459a795800b57589cece38ba}\label{class_t_main_module_a95798f31459a795800b57589cece38ba}} 
+\index{TMainModule@{TMainModule}!CreateAssetsArchive@{CreateAssetsArchive}}
+\index{CreateAssetsArchive@{CreateAssetsArchive}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{CreateAssetsArchive()}{CreateAssetsArchive()}}
+{\footnotesize\ttfamily void TMain\+Module\+::\+Create\+Assets\+Archive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates an empty Assets archive. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_main_module_a5cc0b5cc5b4a9c06152b91a9aa96cb04}\label{class_t_main_module_a5cc0b5cc5b4a9c06152b91a9aa96cb04}} 
+\index{TMainModule@{TMainModule}!CreateCustomersArchive@{CreateCustomersArchive}}
+\index{CreateCustomersArchive@{CreateCustomersArchive}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{CreateCustomersArchive()}{CreateCustomersArchive()}}
+{\footnotesize\ttfamily void TMain\+Module\+::\+Create\+Customers\+Archive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates and empty Customers archive. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_main_module_a06f538373f678943f1dcb4d8277d6c7c}\label{class_t_main_module_a06f538373f678943f1dcb4d8277d6c7c}} 
+\index{TMainModule@{TMainModule}!DBCitiesLoadFromFile@{DBCitiesLoadFromFile}}
+\index{DBCitiesLoadFromFile@{DBCitiesLoadFromFile}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{DBCitiesLoadFromFile()}{DBCitiesLoadFromFile()}}
+{\footnotesize\ttfamily void TMain\+Module\+::\+DBCities\+Load\+From\+File (\begin{DoxyParamCaption}\item[{LPCSTR}]{p\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+Loads from file a Cities archive. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em p\+File\+Name} & Pointer to a filename string \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_main_module_a8efb0819554ae805118f60b3bd307562}\label{class_t_main_module_a8efb0819554ae805118f60b3bd307562}} 
+\index{TMainModule@{TMainModule}!debug\_MoreTestings@{debug\_MoreTestings}}
+\index{debug\_MoreTestings@{debug\_MoreTestings}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{debug\_MoreTestings()}{debug\_MoreTestings()}}
+{\footnotesize\ttfamily void TMain\+Module\+::debug\+\_\+\+More\+Testings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test Unit procedure. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_main_module_a78ee9963f01fe27ef512add0c3fd0233}\label{class_t_main_module_a78ee9963f01fe27ef512add0c3fd0233}} 
+\index{TMainModule@{TMainModule}!debug\_PrintAssets@{debug\_PrintAssets}}
+\index{debug\_PrintAssets@{debug\_PrintAssets}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{debug\_PrintAssets()}{debug\_PrintAssets()}}
+{\footnotesize\ttfamily void TMain\+Module\+::debug\+\_\+\+Print\+Assets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test Unit procedure. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_main_module_ab7c14ee68d66daadd0d58c4ef6a12d9e}\label{class_t_main_module_ab7c14ee68d66daadd0d58c4ef6a12d9e}} 
+\index{TMainModule@{TMainModule}!debug\_PrintCities@{debug\_PrintCities}}
+\index{debug\_PrintCities@{debug\_PrintCities}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{debug\_PrintCities()}{debug\_PrintCities()}}
+{\footnotesize\ttfamily void TMain\+Module\+::debug\+\_\+\+Print\+Cities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test Unit procedure. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_main_module_a0068a72e0deab68303d64599d895dbb9}\label{class_t_main_module_a0068a72e0deab68303d64599d895dbb9}} 
+\index{TMainModule@{TMainModule}!debug\_PrintCustomers@{debug\_PrintCustomers}}
+\index{debug\_PrintCustomers@{debug\_PrintCustomers}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{debug\_PrintCustomers()}{debug\_PrintCustomers()}}
+{\footnotesize\ttfamily void TMain\+Module\+::debug\+\_\+\+Print\+Customers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test Unit procedure. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_main_module_a238d4bfaa8129d355177af0fb78bb34b}\label{class_t_main_module_a238d4bfaa8129d355177af0fb78bb34b}} 
+\index{TMainModule@{TMainModule}!debug\_SortIntegers@{debug\_SortIntegers}}
+\index{debug\_SortIntegers@{debug\_SortIntegers}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{debug\_SortIntegers()}{debug\_SortIntegers()}}
+{\footnotesize\ttfamily void TMain\+Module\+::debug\+\_\+\+Sort\+Integers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test Unit procedure. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_main_module_a41f7aae8e98a5ac4a6abc642e579f365}\label{class_t_main_module_a41f7aae8e98a5ac4a6abc642e579f365}} 
+\index{TMainModule@{TMainModule}!debug\_SortStrings@{debug\_SortStrings}}
+\index{debug\_SortStrings@{debug\_SortStrings}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{debug\_SortStrings()}{debug\_SortStrings()}}
+{\footnotesize\ttfamily void TMain\+Module\+::debug\+\_\+\+Sort\+Strings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test Unit procedure. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_main_module_a7b9a4ef3cc9ec20e03a5603b1da62c45}\label{class_t_main_module_a7b9a4ef3cc9ec20e03a5603b1da62c45}} 
+\index{TMainModule@{TMainModule}!DebugPrint@{DebugPrint}}
+\index{DebugPrint@{DebugPrint}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{DebugPrint()}{DebugPrint()}}
+{\footnotesize\ttfamily void TMain\+Module\+::\+Debug\+Print (\begin{DoxyParamCaption}\item[{std\+::string}]{str\+Msg }\end{DoxyParamCaption})}
+
+
+
+Prints a string on the Debug form. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_main_module_abf485c684ad443c51c124d219aa4983d}\label{class_t_main_module_abf485c684ad443c51c124d219aa4983d}} 
+\index{TMainModule@{TMainModule}!DrawImage@{DrawImage}}
+\index{DrawImage@{DrawImage}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{DrawImage()}{DrawImage()}}
+{\footnotesize\ttfamily void TMain\+Module\+::\+Draw\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws an image on client area. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_main_module_a39646822fb1076f7c01bb9af3b00a8a1}\label{class_t_main_module_a39646822fb1076f7c01bb9af3b00a8a1}} 
+\index{TMainModule@{TMainModule}!GetFormAssets@{GetFormAssets}}
+\index{GetFormAssets@{GetFormAssets}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{GetFormAssets()}{GetFormAssets()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} TMain\+Module\+::\+Get\+Form\+Assets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_t_main_module_a47460029fe8fd4f70c757db87c15e036}\label{class_t_main_module_a47460029fe8fd4f70c757db87c15e036}} 
+\index{TMainModule@{TMainModule}!GetFormCustomers@{GetFormCustomers}}
+\index{GetFormCustomers@{GetFormCustomers}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{GetFormCustomers()}{GetFormCustomers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} TMain\+Module\+::\+Get\+Form\+Customers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_t_main_module_af8bc09f65bcd8693756d03a0baba5be2}\label{class_t_main_module_af8bc09f65bcd8693756d03a0baba5be2}} 
+\index{TMainModule@{TMainModule}!IsDirty@{IsDirty}}
+\index{IsDirty@{IsDirty}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{IsDirty()}{IsDirty()}}
+{\footnotesize\ttfamily bool TMain\+Module\+::\+Is\+Dirty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if any archive has been modified. 
+
+\DoxyHorRuler{0}
+ \begin{DoxyReturn}{Returns}
+Returns true if Assets or Customers archive has been modified 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_main_module_a612952d18634f16c46de402beea285c9}\label{class_t_main_module_a612952d18634f16c46de402beea285c9}} 
+\index{TMainModule@{TMainModule}!LoadImage@{LoadImage}}
+\index{LoadImage@{LoadImage}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{LoadImage()}{LoadImage()}}
+{\footnotesize\ttfamily void TMain\+Module\+::\+Load\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Loads a bitmap from application resource. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_main_module_aae56e13b83a621e35b29bd3b13247187}\label{class_t_main_module_aae56e13b83a621e35b29bd3b13247187}} 
+\index{TMainModule@{TMainModule}!MsgAssetsDBModify@{MsgAssetsDBModify}}
+\index{MsgAssetsDBModify@{MsgAssetsDBModify}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{MsgAssetsDBModify()}{MsgAssetsDBModify()}}
+{\footnotesize\ttfamily void TMain\+Module\+::\+Msg\+Assets\+DBModify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Invoked when Assets archive has been modified. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_main_module_a97a449ee491e98daaa82befdd041f0e9}\label{class_t_main_module_a97a449ee491e98daaa82befdd041f0e9}} 
+\index{TMainModule@{TMainModule}!MsgCustomersDBModify@{MsgCustomersDBModify}}
+\index{MsgCustomersDBModify@{MsgCustomersDBModify}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{MsgCustomersDBModify()}{MsgCustomersDBModify()}}
+{\footnotesize\ttfamily void TMain\+Module\+::\+Msg\+Customers\+DBModify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Invoked when Customers archive has benn modified. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_main_module_aa52b774274445974f0528c77676a9fb9}\label{class_t_main_module_aa52b774274445974f0528c77676a9fb9}} 
+\index{TMainModule@{TMainModule}!OpenAssetsArchive@{OpenAssetsArchive}}
+\index{OpenAssetsArchive@{OpenAssetsArchive}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{OpenAssetsArchive()}{OpenAssetsArchive()}}
+{\footnotesize\ttfamily void TMain\+Module\+::\+Open\+Assets\+Archive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Opens an Assets archive. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_main_module_a1d014af09f820d0238985375794c8592}\label{class_t_main_module_a1d014af09f820d0238985375794c8592}} 
+\index{TMainModule@{TMainModule}!OpenCustomersArchive@{OpenCustomersArchive}}
+\index{OpenCustomersArchive@{OpenCustomersArchive}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{OpenCustomersArchive()}{OpenCustomersArchive()}}
+{\footnotesize\ttfamily void TMain\+Module\+::\+Open\+Customers\+Archive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Opens a Customers archive. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_main_module_a87835149e492f4e4f896e854cf2ce326}\label{class_t_main_module_a87835149e492f4e4f896e854cf2ce326}} 
+\index{TMainModule@{TMainModule}!SaveAssetsArchive@{SaveAssetsArchive}}
+\index{SaveAssetsArchive@{SaveAssetsArchive}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{SaveAssetsArchive()}{SaveAssetsArchive()}}
+{\footnotesize\ttfamily void TMain\+Module\+::\+Save\+Assets\+Archive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Saves an Assets archive. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_main_module_ab38fcf685f63a96214c4f5e11dd95992}\label{class_t_main_module_ab38fcf685f63a96214c4f5e11dd95992}} 
+\index{TMainModule@{TMainModule}!SaveCustomersArchive@{SaveCustomersArchive}}
+\index{SaveCustomersArchive@{SaveCustomersArchive}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{SaveCustomersArchive()}{SaveCustomersArchive()}}
+{\footnotesize\ttfamily void TMain\+Module\+::\+Save\+Customers\+Archive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Saves a Customers archive. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_main_module_acfce9678c02b898aa7aaa71a5861e661}\label{class_t_main_module_acfce9678c02b898aa7aaa71a5861e661}} 
+\index{TMainModule@{TMainModule}!Setup@{Setup}}
+\index{Setup@{Setup}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{Setup()}{Setup()}}
+{\footnotesize\ttfamily void TMain\+Module\+::\+Setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Setup. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_main_module_ab8d6aa991da8cea3ccc15c82f9fdc75e}\label{class_t_main_module_ab8d6aa991da8cea3ccc15c82f9fdc75e}} 
+\index{TMainModule@{TMainModule}!ShowAboutBox@{ShowAboutBox}}
+\index{ShowAboutBox@{ShowAboutBox}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{ShowAboutBox()}{ShowAboutBox()}}
+{\footnotesize\ttfamily void TMain\+Module\+::\+Show\+About\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Display the About Box. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_main_module_acd1bf132795bc19bf33ab66aaeb38f45}\label{class_t_main_module_acd1bf132795bc19bf33ab66aaeb38f45}} 
+\index{TMainModule@{TMainModule}!ShowFormAssets@{ShowFormAssets}}
+\index{ShowFormAssets@{ShowFormAssets}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{ShowFormAssets()}{ShowFormAssets()}}
+{\footnotesize\ttfamily void TMain\+Module\+::\+Show\+Form\+Assets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Shows the Assets form. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_main_module_a028dc194aabdc33a000241ed369f1303}\label{class_t_main_module_a028dc194aabdc33a000241ed369f1303}} 
+\index{TMainModule@{TMainModule}!ShowFormCustomers@{ShowFormCustomers}}
+\index{ShowFormCustomers@{ShowFormCustomers}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{ShowFormCustomers()}{ShowFormCustomers()}}
+{\footnotesize\ttfamily void TMain\+Module\+::\+Show\+Form\+Customers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Shows the Customers form. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_main_module_ada18486c6ce1332e7ca1fc2117ae1e96}\label{class_t_main_module_ada18486c6ce1332e7ca1fc2117ae1e96}} 
+\index{TMainModule@{TMainModule}!ShowFormDebug@{ShowFormDebug}}
+\index{ShowFormDebug@{ShowFormDebug}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{ShowFormDebug()}{ShowFormDebug()}}
+{\footnotesize\ttfamily void TMain\+Module\+::\+Show\+Form\+Debug (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Shows the Debug form. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_main_module_a6dab8c0658f8c9ea9d8d90d8ec59cda4}\label{class_t_main_module_a6dab8c0658f8c9ea9d8d90d8ec59cda4}} 
+\index{TMainModule@{TMainModule}!ShowFormFindAssets@{ShowFormFindAssets}}
+\index{ShowFormFindAssets@{ShowFormFindAssets}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{ShowFormFindAssets()}{ShowFormFindAssets()}}
+{\footnotesize\ttfamily void TMain\+Module\+::\+Show\+Form\+Find\+Assets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Shows the \char`\"{}\+Find\+Assets\char`\"{} form. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_main_module_a37af1b5ee6f94cb2af7ae818a645cd7e}\label{class_t_main_module_a37af1b5ee6f94cb2af7ae818a645cd7e}} 
+\index{TMainModule@{TMainModule}!ShowFormFindCustomers@{ShowFormFindCustomers}}
+\index{ShowFormFindCustomers@{ShowFormFindCustomers}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{ShowFormFindCustomers()}{ShowFormFindCustomers()}}
+{\footnotesize\ttfamily void TMain\+Module\+::\+Show\+Form\+Find\+Customers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Shows the \char`\"{}\+Find\+Customers\char`\"{} form. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_main_module_abd6f19d8d7a09413c57d2aa207fc73fe}\label{class_t_main_module_abd6f19d8d7a09413c57d2aa207fc73fe}} 
+\index{TMainModule@{TMainModule}!ShowFormQueries@{ShowFormQueries}}
+\index{ShowFormQueries@{ShowFormQueries}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{ShowFormQueries()}{ShowFormQueries()}}
+{\footnotesize\ttfamily void TMain\+Module\+::\+Show\+Form\+Queries (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Shows the \char`\"{}\+Queries\char`\"{} form. 
+
+\DoxyHorRuler{0}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_t_main_module_aaaa76e58401d1c81d5613634a2b340c5}\label{class_t_main_module_aaaa76e58401d1c81d5613634a2b340c5}} 
+\index{TMainModule@{TMainModule}!m\_bAssetsDBModify@{m\_bAssetsDBModify}}
+\index{m\_bAssetsDBModify@{m\_bAssetsDBModify}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{m\_bAssetsDBModify}{m\_bAssetsDBModify}}
+{\footnotesize\ttfamily bool TMain\+Module\+::m\+\_\+b\+Assets\+DBModify\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_t_main_module_ac0219f654d86302859e7f5946d3f76a8}\label{class_t_main_module_ac0219f654d86302859e7f5946d3f76a8}} 
+\index{TMainModule@{TMainModule}!m\_bCustomersDBModify@{m\_bCustomersDBModify}}
+\index{m\_bCustomersDBModify@{m\_bCustomersDBModify}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{m\_bCustomersDBModify}{m\_bCustomersDBModify}}
+{\footnotesize\ttfamily bool TMain\+Module\+::m\+\_\+b\+Customers\+DBModify\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_t_main_module_a0f8316c2d1f670a1d8b1e415e2c5250e}\label{class_t_main_module_a0f8316c2d1f670a1d8b1e415e2c5250e}} 
+\index{TMainModule@{TMainModule}!m\_hBmpBack@{m\_hBmpBack}}
+\index{m\_hBmpBack@{m\_hBmpBack}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{m\_hBmpBack}{m\_hBmpBack}}
+{\footnotesize\ttfamily HBITMAP TMain\+Module\+::m\+\_\+h\+Bmp\+Back\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_t_main_module_a3e0787c2baa85c047a51ddd671a737a5}\label{class_t_main_module_a3e0787c2baa85c047a51ddd671a737a5}} 
+\index{TMainModule@{TMainModule}!m\_hInst@{m\_hInst}}
+\index{m\_hInst@{m\_hInst}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{m\_hInst}{m\_hInst}}
+{\footnotesize\ttfamily HINSTANCE TMain\+Module\+::m\+\_\+h\+Inst\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_t_main_module_aeb8b79db2e3502bd32ddb2e39d904727}\label{class_t_main_module_aeb8b79db2e3502bd32ddb2e39d904727}} 
+\index{TMainModule@{TMainModule}!m\_hLibGui@{m\_hLibGui}}
+\index{m\_hLibGui@{m\_hLibGui}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{m\_hLibGui}{m\_hLibGui}}
+{\footnotesize\ttfamily HINSTANCE TMain\+Module\+::m\+\_\+h\+Lib\+Gui\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_t_main_module_a8094d43d98828a8f4a17fe7344582902}\label{class_t_main_module_a8094d43d98828a8f4a17fe7344582902}} 
+\index{TMainModule@{TMainModule}!m\_hWnd@{m\_hWnd}}
+\index{m\_hWnd@{m\_hWnd}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{m\_hWnd}{m\_hWnd}}
+{\footnotesize\ttfamily HWND TMain\+Module\+::m\+\_\+h\+Wnd\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_t_main_module_a8210f94242bf68e70cdf17fd4934e135}\label{class_t_main_module_a8210f94242bf68e70cdf17fd4934e135}} 
+\index{TMainModule@{TMainModule}!m\_pDB@{m\_pDB}}
+\index{m\_pDB@{m\_pDB}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{m\_pDB}{m\_pDB}}
+{\footnotesize\ttfamily \mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} TMain\+Module\+::m\+\_\+p\+DB\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_t_main_module_a68f7631ecd5f0155e576269fd923e8b2}\label{class_t_main_module_a68f7631ecd5f0155e576269fd923e8b2}} 
+\index{TMainModule@{TMainModule}!m\_pFormAssets@{m\_pFormAssets}}
+\index{m\_pFormAssets@{m\_pFormAssets}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{m\_pFormAssets}{m\_pFormAssets}}
+{\footnotesize\ttfamily \mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} TMain\+Module\+::m\+\_\+p\+Form\+Assets\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_t_main_module_acf56f9e1dfd639e89cdd323788b86da4}\label{class_t_main_module_acf56f9e1dfd639e89cdd323788b86da4}} 
+\index{TMainModule@{TMainModule}!m\_pFormCustomers@{m\_pFormCustomers}}
+\index{m\_pFormCustomers@{m\_pFormCustomers}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{m\_pFormCustomers}{m\_pFormCustomers}}
+{\footnotesize\ttfamily \mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} TMain\+Module\+::m\+\_\+p\+Form\+Customers\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_t_main_module_aacb4a6eb739f347df1d9e0fa7b7e70dc}\label{class_t_main_module_aacb4a6eb739f347df1d9e0fa7b7e70dc}} 
+\index{TMainModule@{TMainModule}!m\_pFormDebug@{m\_pFormDebug}}
+\index{m\_pFormDebug@{m\_pFormDebug}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{m\_pFormDebug}{m\_pFormDebug}}
+{\footnotesize\ttfamily \mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} TMain\+Module\+::m\+\_\+p\+Form\+Debug\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_t_main_module_a3fb37077b5a0a82563454be6f80e0455}\label{class_t_main_module_a3fb37077b5a0a82563454be6f80e0455}} 
+\index{TMainModule@{TMainModule}!m\_pFormFindAssets@{m\_pFormFindAssets}}
+\index{m\_pFormFindAssets@{m\_pFormFindAssets}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{m\_pFormFindAssets}{m\_pFormFindAssets}}
+{\footnotesize\ttfamily \mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} TMain\+Module\+::m\+\_\+p\+Form\+Find\+Assets\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_t_main_module_a405fca314d5b06650c084b981f8e52f7}\label{class_t_main_module_a405fca314d5b06650c084b981f8e52f7}} 
+\index{TMainModule@{TMainModule}!m\_pFormFindCustomers@{m\_pFormFindCustomers}}
+\index{m\_pFormFindCustomers@{m\_pFormFindCustomers}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{m\_pFormFindCustomers}{m\_pFormFindCustomers}}
+{\footnotesize\ttfamily \mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} TMain\+Module\+::m\+\_\+p\+Form\+Find\+Customers\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_t_main_module_a235e9d1c67245d6a60b2afc1116bc09a}\label{class_t_main_module_a235e9d1c67245d6a60b2afc1116bc09a}} 
+\index{TMainModule@{TMainModule}!m\_pFormQueries@{m\_pFormQueries}}
+\index{m\_pFormQueries@{m\_pFormQueries}!TMainModule@{TMainModule}}
+\doxysubsubsection{\texorpdfstring{m\_pFormQueries}{m\_pFormQueries}}
+{\footnotesize\ttfamily \mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} TMain\+Module\+::m\+\_\+p\+Form\+Queries\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Z\+:/\+F/dev/jobs/immobiliare.\+mingw/immobiliare/sources/\mbox{\hyperlink{main_8h}{main.\+h}}\item 
+Z\+:/\+F/dev/jobs/immobiliare.\+mingw/immobiliare/sources/\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,41 @@
+\hypertarget{utils_8cpp}{}\doxysection{Z\+:/\+F/dev/jobs/immobiliare.mingw/immobiliare/sources/utils.cpp File Reference}
+\label{utils_8cpp}\index{Z:/F/dev/jobs/immobiliare.mingw/immobiliare/sources/utils.cpp@{Z:/F/dev/jobs/immobiliare.mingw/immobiliare/sources/utils.cpp}}
+
+
+Utility routines.  
+
+
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+{\ttfamily \#include $<$fileapi.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$locale$>$}\newline
+{\ttfamily \#include $<$codecvt$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}../sources/utils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../sources/commdefs.\+h\char`\"{}}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceutils}{utils}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{namespaceutils_ab3aaf4a1245b632b9f2261e8c2864e60}{utils\+::\+Get\+Exe\+Path}} ()
+\begin{DoxyCompactList}\small\item\em Gets the full path for the executable file. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespaceutils_a7b37ef03307840916b704a5e5d53f5db}{utils\+::\+Get\+Data\+Path}} ()
+\begin{DoxyCompactList}\small\item\em Gets the full path for the data folder. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceutils_a0f9ba6353da8f0853c566a62841d5876}{utils\+::\+Parse\+Date}} (std\+::string str\+Date, unsigned short \&n\+Year, unsigned short \&n\+Month, unsigned short \&n\+Day)
+\begin{DoxyCompactList}\small\item\em Parses a date string. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceutils_a96b1ea4b72cf1e55ab47104ad2cde248}{utils\+::\+File\+Exists}} (std\+::string str\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Checks for file existence. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespaceutils_a561ebdb24d29cc4e61dd7c62ade8c9af}{utils\+::\+Lower\+Case}} (std\+::string str\+Val)
+\begin{DoxyCompactList}\small\item\em Converts a string to lower case. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespaceutils_afc0a4c6a8bd44cf21628f7a502344f1c}{utils\+::\+Wide\+To\+String}} (std\+::wstring wstr\+String)
+\begin{DoxyCompactList}\small\item\em Converts a wide char (unicode) string to a regular string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utility routines. 
+

@@ -1,0 +1,211 @@
+\hypertarget{customers_8cpp}{}\doxysection{Z\+:/\+F/dev/jobs/immobiliare.mingw/immobiliare/sources/customers.cpp File Reference}
+\label{customers_8cpp}\index{Z:/F/dev/jobs/immobiliare.mingw/immobiliare/sources/customers.cpp@{Z:/F/dev/jobs/immobiliare.mingw/immobiliare/sources/customers.cpp}}
+
+
+Customers modelling.  
+
+
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../sources/utils.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../sources/sorting.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../sources/customers.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{customers_8cpp_a1e94d798d06431d85c29ae31b0d96f99}{Sort\+By\+First\+Name}} (\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&Ptr\+Customers, bool b\+Asc)
+\begin{DoxyCompactList}\small\item\em Sorts a vector of Customer objects by \char`\"{}first name\char`\"{} field. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{customers_8cpp_ab5984ff3c973f6351b3ce8e442cae685}{Sort\+By\+Last\+Name}} (\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&Ptr\+Customers, bool b\+Asc)
+\begin{DoxyCompactList}\small\item\em Sorts a vector of Customer objects by \char`\"{}last name\char`\"{} field. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{customers_8cpp_a2e8695fb01cd2838fe9679845ea3758f}{Sort\+By\+City}} (\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&Ptr\+Customers, bool b\+Asc)
+\begin{DoxyCompactList}\small\item\em Sorts a vector of Customer objects by \char`\"{}city\char`\"{} field. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{customers_8cpp_a6490b46fb601f4b67ca9576158ad3dd9}{Sort\+By\+Budget}} (\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&Ptr\+Customers, bool b\+Asc)
+\begin{DoxyCompactList}\small\item\em Sorts a vector of Customer objects by \char`\"{}budget\char`\"{} field. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{customers_8cpp_a47b78f18b48dfad02f2a7fdca6f785ba}{Filter\+By\+First\+Name}} (\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&Customers, std\+::string str\+First\+Name, bool b\+Full\+Match)
+\begin{DoxyCompactList}\small\item\em Filters a vector of Customers object by \char`\"{}first name\char`\"{} field. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{customers_8cpp_a4ca3f377d2ec08434ac1a02363c158f9}{Filter\+By\+Last\+Name}} (\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&Customers, std\+::string str\+Last\+Name, bool b\+Full\+Match)
+\begin{DoxyCompactList}\small\item\em Filters a vector of Customers object by \char`\"{}last name\char`\"{} field. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{customers_8cpp_a1a1db198ad09037c7743d59a231cb5d7}{Filter\+By\+City}} (\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&Customers, std\+::string str\+City, bool b\+Full\+Match)
+\begin{DoxyCompactList}\small\item\em Filters a vector of Customers object by \char`\"{}city\char`\"{} field. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{customers_8cpp_af0d12e65e7432dc3a1c3fd8503f935d1}{Filter\+By\+Ownership}} (\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&Customers, \mbox{\hyperlink{customers_8h_ab1fe9b95e1a0cde5bc234cb24d0d3e1e}{en\+Customer\+Ownership\+Type}} n\+Ownership)
+\begin{DoxyCompactList}\small\item\em Filters a vector of Customers object by \char`\"{}ownership\char`\"{} field. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{customers_8cpp_a84f4c854925ab60f64cc24d27a1b893a}{Filter\+By\+Budget}} (\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&Customers, unsigned n\+Budget, std\+::string str\+Ineq)
+\begin{DoxyCompactList}\small\item\em Filters a vector of Customers object by \char`\"{}budget\char`\"{} field. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Customers modelling. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{customers_8cpp_a84f4c854925ab60f64cc24d27a1b893a}\label{customers_8cpp_a84f4c854925ab60f64cc24d27a1b893a}} 
+\index{customers.cpp@{customers.cpp}!FilterByBudget@{FilterByBudget}}
+\index{FilterByBudget@{FilterByBudget}!customers.cpp@{customers.cpp}}
+\doxysubsubsection{\texorpdfstring{FilterByBudget()}{FilterByBudget()}}
+{\footnotesize\ttfamily void Filter\+By\+Budget (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&}]{Customers,  }\item[{unsigned}]{n\+Budget,  }\item[{std\+::string}]{str\+Ineq }\end{DoxyParamCaption})}
+
+
+
+Filters a vector of Customers object by \char`\"{}budget\char`\"{} field. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em Customers} & Reference to a vector of pointers to Customers \\
+\hline
+{\em n\+Budget} & The budget value to filter for \\
+\hline
+{\em str\+Ineq} & String specifying the searching criteria \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{customers_8cpp_a1a1db198ad09037c7743d59a231cb5d7}\label{customers_8cpp_a1a1db198ad09037c7743d59a231cb5d7}} 
+\index{customers.cpp@{customers.cpp}!FilterByCity@{FilterByCity}}
+\index{FilterByCity@{FilterByCity}!customers.cpp@{customers.cpp}}
+\doxysubsubsection{\texorpdfstring{FilterByCity()}{FilterByCity()}}
+{\footnotesize\ttfamily void Filter\+By\+City (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&}]{Customers,  }\item[{std\+::string}]{str\+City,  }\item[{bool}]{b\+Full\+Match }\end{DoxyParamCaption})}
+
+
+
+Filters a vector of Customers object by \char`\"{}city\char`\"{} field. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em Customers} & Reference to a vector of pointers to Customers \\
+\hline
+{\em str\+City} & String to search for \\
+\hline
+{\em b\+Full\+Match} & Flag specifying a full match to search for \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{customers_8cpp_a47b78f18b48dfad02f2a7fdca6f785ba}\label{customers_8cpp_a47b78f18b48dfad02f2a7fdca6f785ba}} 
+\index{customers.cpp@{customers.cpp}!FilterByFirstName@{FilterByFirstName}}
+\index{FilterByFirstName@{FilterByFirstName}!customers.cpp@{customers.cpp}}
+\doxysubsubsection{\texorpdfstring{FilterByFirstName()}{FilterByFirstName()}}
+{\footnotesize\ttfamily void Filter\+By\+First\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&}]{Customers,  }\item[{std\+::string}]{str\+First\+Name,  }\item[{bool}]{b\+Full\+Match }\end{DoxyParamCaption})}
+
+
+
+Filters a vector of Customers object by \char`\"{}first name\char`\"{} field. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em Customers} & Reference to a vector of pointers to Customers \\
+\hline
+{\em str\+First\+Name} & String to search for \\
+\hline
+{\em b\+Full\+Match} & Flag specifying a full match to search for \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{customers_8cpp_a4ca3f377d2ec08434ac1a02363c158f9}\label{customers_8cpp_a4ca3f377d2ec08434ac1a02363c158f9}} 
+\index{customers.cpp@{customers.cpp}!FilterByLastName@{FilterByLastName}}
+\index{FilterByLastName@{FilterByLastName}!customers.cpp@{customers.cpp}}
+\doxysubsubsection{\texorpdfstring{FilterByLastName()}{FilterByLastName()}}
+{\footnotesize\ttfamily void Filter\+By\+Last\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&}]{Customers,  }\item[{std\+::string}]{str\+Last\+Name,  }\item[{bool}]{b\+Full\+Match }\end{DoxyParamCaption})}
+
+
+
+Filters a vector of Customers object by \char`\"{}last name\char`\"{} field. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em Customers} & Reference to a vector of pointers to Customers \\
+\hline
+{\em str\+Last\+Name} & String to search for \\
+\hline
+{\em b\+Full\+Match} & Flag specifying a full match to search for \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{customers_8cpp_af0d12e65e7432dc3a1c3fd8503f935d1}\label{customers_8cpp_af0d12e65e7432dc3a1c3fd8503f935d1}} 
+\index{customers.cpp@{customers.cpp}!FilterByOwnership@{FilterByOwnership}}
+\index{FilterByOwnership@{FilterByOwnership}!customers.cpp@{customers.cpp}}
+\doxysubsubsection{\texorpdfstring{FilterByOwnership()}{FilterByOwnership()}}
+{\footnotesize\ttfamily void Filter\+By\+Ownership (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&}]{Customers,  }\item[{\mbox{\hyperlink{customers_8h_ab1fe9b95e1a0cde5bc234cb24d0d3e1e}{en\+Customer\+Ownership\+Type}}}]{n\+Ownership }\end{DoxyParamCaption})}
+
+
+
+Filters a vector of Customers object by \char`\"{}ownership\char`\"{} field. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em Customers} & Reference to a vector of pointers to Customers \\
+\hline
+{\em n\+Ownership} & Ownership enumerated type to match for \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{customers_8cpp_a6490b46fb601f4b67ca9576158ad3dd9}\label{customers_8cpp_a6490b46fb601f4b67ca9576158ad3dd9}} 
+\index{customers.cpp@{customers.cpp}!SortByBudget@{SortByBudget}}
+\index{SortByBudget@{SortByBudget}!customers.cpp@{customers.cpp}}
+\doxysubsubsection{\texorpdfstring{SortByBudget()}{SortByBudget()}}
+{\footnotesize\ttfamily void Sort\+By\+Budget (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&}]{Ptr\+Customers,  }\item[{bool}]{b\+Asc }\end{DoxyParamCaption})}
+
+
+
+Sorts a vector of Customer objects by \char`\"{}budget\char`\"{} field. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em Ptr\+Customers} & Reference to a vector of pointers to Customers \\
+\hline
+{\em b\+Asc} & Flag specifying the sorting type, true for ascending \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{customers_8cpp_a2e8695fb01cd2838fe9679845ea3758f}\label{customers_8cpp_a2e8695fb01cd2838fe9679845ea3758f}} 
+\index{customers.cpp@{customers.cpp}!SortByCity@{SortByCity}}
+\index{SortByCity@{SortByCity}!customers.cpp@{customers.cpp}}
+\doxysubsubsection{\texorpdfstring{SortByCity()}{SortByCity()}}
+{\footnotesize\ttfamily void Sort\+By\+City (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&}]{Ptr\+Customers,  }\item[{bool}]{b\+Asc }\end{DoxyParamCaption})}
+
+
+
+Sorts a vector of Customer objects by \char`\"{}city\char`\"{} field. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em Ptr\+Customers} & Reference to a vector of pointers to Customers \\
+\hline
+{\em b\+Asc} & Flag specifying the sorting type, true for ascending \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{customers_8cpp_a1e94d798d06431d85c29ae31b0d96f99}\label{customers_8cpp_a1e94d798d06431d85c29ae31b0d96f99}} 
+\index{customers.cpp@{customers.cpp}!SortByFirstName@{SortByFirstName}}
+\index{SortByFirstName@{SortByFirstName}!customers.cpp@{customers.cpp}}
+\doxysubsubsection{\texorpdfstring{SortByFirstName()}{SortByFirstName()}}
+{\footnotesize\ttfamily void Sort\+By\+First\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&}]{Ptr\+Customers,  }\item[{bool}]{b\+Asc }\end{DoxyParamCaption})}
+
+
+
+Sorts a vector of Customer objects by \char`\"{}first name\char`\"{} field. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em Ptr\+Customers} & Reference to a vector of pointers to Customers \\
+\hline
+{\em b\+Asc} & Flag specifying the sorting type, true for ascending \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{customers_8cpp_ab5984ff3c973f6351b3ce8e442cae685}\label{customers_8cpp_ab5984ff3c973f6351b3ce8e442cae685}} 
+\index{customers.cpp@{customers.cpp}!SortByLastName@{SortByLastName}}
+\index{SortByLastName@{SortByLastName}!customers.cpp@{customers.cpp}}
+\doxysubsubsection{\texorpdfstring{SortByLastName()}{SortByLastName()}}
+{\footnotesize\ttfamily void Sort\+By\+Last\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \&}]{Ptr\+Customers,  }\item[{bool}]{b\+Asc }\end{DoxyParamCaption})}
+
+
+
+Sorts a vector of Customer objects by \char`\"{}last name\char`\"{} field. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em Ptr\+Customers} & Reference to a vector of pointers to Customers \\
+\hline
+{\em b\+Asc} & Flag specifying the sorting type, true for ascending \\
+\hline
+\end{DoxyParams}

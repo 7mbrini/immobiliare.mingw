@@ -1,0 +1,335 @@
+\hypertarget{class_t_data_banker}{}\doxysection{TData\+Banker Class Reference}
+\label{class_t_data_banker}\index{TDataBanker@{TDataBanker}}
+
+
+{\ttfamily \#include $<$databanker.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_data_banker_a87b52b413375b5a681b049a423e22a2b}{TData\+Banker}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_data_banker_aa37f39eb0ecfc79a837a33354f396c20}{$\sim$\+TData\+Banker}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_data_banker_abe89b350c9164463f7ea6f85b3bd85ac}{Cities\+Create\+Archive}} ()
+\begin{DoxyCompactList}\small\item\em Creates an empty Cities archive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_data_banker_acb1363307963a0dc17daf126801bf5f2}{Assets\+Create\+Archive}} ()
+\begin{DoxyCompactList}\small\item\em Creates an empty Assets archive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_data_banker_ad3fbea1169fccced7320c6c7abd6de3a}{Customers\+Create\+Archive}} ()
+\begin{DoxyCompactList}\small\item\em Creates an empty Customers archive. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_data_banker_ad9485d099b1c78e5548c2d206379c62f}{Have\+Cities}} ()
+\begin{DoxyCompactList}\small\item\em Checks for Cities archive emptiness. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_data_banker_a2e57608e2f021ad973bf4d4d135a0f1e}{Have\+Assets}} ()
+\begin{DoxyCompactList}\small\item\em Checks for Assets archive emptiness. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_data_banker_a71d73deaf84307f37f5486f053df7bfc}{Have\+Customers}} ()
+\begin{DoxyCompactList}\small\item\em Checks for Customers archive emptiness. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_t_assets_archive}{TAssets\+Archive}} $\ast$const \mbox{\hyperlink{class_t_data_banker_a03639cd6ae3b63d51ce552b7c7212d71}{Get\+Assets}} ()
+\begin{DoxyCompactList}\small\item\em Gets the Assets contained in the archive. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_customers_archive}{TCustomers\+Archive}} $\ast$const \mbox{\hyperlink{class_t_data_banker_a20715976e83a2943616e07855bdb8e54}{Get\+Customers}} ()
+\begin{DoxyCompactList}\small\item\em Gets the Customers contained in the archive. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_cities_archive}{TCities\+Archive}} $\ast$const \mbox{\hyperlink{class_t_data_banker_a65c9b37e28f8d15e1939174e706ce794}{Get\+Cities}} ()
+\begin{DoxyCompactList}\small\item\em Gets the Cities contained in the archive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_data_banker_af108916327e330fee9ac2a7f0f1048c4}{Get\+Cities}} (\mbox{\hyperlink{cities_8h_a4075b5f77f5b5ea671ccbfe28e3390d7}{TVec\+Cities}} \&Cities)
+\begin{DoxyCompactList}\small\item\em Gets the Cities contained in the archive. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_data_banker_ae1f389594c5d21037d83adbf271133a1}{Cities\+Load\+From\+File}} (std\+::string str\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Load from file a Cities archive. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_data_banker_a1479c12e6449e44a1f9dbcee6dff9fc6}{Assets\+Load\+From\+File}} (std\+::string str\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Load from file an Assets archive. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_data_banker_a7e46bbacb1cddff12b0df2619d70110c}{Customers\+Load\+From\+File}} (std\+::string str\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Load from file an Customers archive. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_data_banker_a1c944bf68695406342f41edb5866ee2c}{Assets\+Save\+To\+File}} (std\+::string str\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Saves to file an Assets archive. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_data_banker_a6c6ecbed58488581780fc3ee3ff2eed7}{Customers\+Save\+To\+File}} (std\+::string str\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Saves to file an Customers archive. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_cities_archive}{TCities\+Archive}} $\ast$ \mbox{\hyperlink{class_t_data_banker_a70596be5220a408f2fd79fface1929f6}{m\+\_\+p\+Cities}}
+\item 
+\mbox{\hyperlink{struct_t_assets_archive}{TAssets\+Archive}} $\ast$ \mbox{\hyperlink{class_t_data_banker_ac43a524bce3a4a88cdefdf799b3afa25}{m\+\_\+p\+Assets}}
+\item 
+\mbox{\hyperlink{class_t_customers_archive}{TCustomers\+Archive}} $\ast$ \mbox{\hyperlink{class_t_data_banker_aa3630a2e3882a7a751a4d5e9fe74aab9}{m\+\_\+p\+Customers}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_data_banker_a87b52b413375b5a681b049a423e22a2b}\label{class_t_data_banker_a87b52b413375b5a681b049a423e22a2b}} 
+\index{TDataBanker@{TDataBanker}!TDataBanker@{TDataBanker}}
+\index{TDataBanker@{TDataBanker}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{TDataBanker()}{TDataBanker()}}
+{\footnotesize\ttfamily TData\+Banker\+::\+TData\+Banker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_data_banker_aa37f39eb0ecfc79a837a33354f396c20}\label{class_t_data_banker_aa37f39eb0ecfc79a837a33354f396c20}} 
+\index{TDataBanker@{TDataBanker}!````~TDataBanker@{$\sim$TDataBanker}}
+\index{````~TDataBanker@{$\sim$TDataBanker}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{$\sim$TDataBanker()}{~TDataBanker()}}
+{\footnotesize\ttfamily TData\+Banker\+::$\sim$\+TData\+Banker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\DoxyHorRuler{0}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_data_banker_acb1363307963a0dc17daf126801bf5f2}\label{class_t_data_banker_acb1363307963a0dc17daf126801bf5f2}} 
+\index{TDataBanker@{TDataBanker}!AssetsCreateArchive@{AssetsCreateArchive}}
+\index{AssetsCreateArchive@{AssetsCreateArchive}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{AssetsCreateArchive()}{AssetsCreateArchive()}}
+{\footnotesize\ttfamily void TData\+Banker\+::\+Assets\+Create\+Archive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates an empty Assets archive. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_data_banker_a1479c12e6449e44a1f9dbcee6dff9fc6}\label{class_t_data_banker_a1479c12e6449e44a1f9dbcee6dff9fc6}} 
+\index{TDataBanker@{TDataBanker}!AssetsLoadFromFile@{AssetsLoadFromFile}}
+\index{AssetsLoadFromFile@{AssetsLoadFromFile}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{AssetsLoadFromFile()}{AssetsLoadFromFile()}}
+{\footnotesize\ttfamily bool TData\+Banker\+::\+Assets\+Load\+From\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{str\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+Load from file an Assets archive. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em str\+File\+Name} & The file name for Assets archive \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true for success, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_data_banker_a1c944bf68695406342f41edb5866ee2c}\label{class_t_data_banker_a1c944bf68695406342f41edb5866ee2c}} 
+\index{TDataBanker@{TDataBanker}!AssetsSaveToFile@{AssetsSaveToFile}}
+\index{AssetsSaveToFile@{AssetsSaveToFile}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{AssetsSaveToFile()}{AssetsSaveToFile()}}
+{\footnotesize\ttfamily bool TData\+Banker\+::\+Assets\+Save\+To\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{str\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+Saves to file an Assets archive. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em str\+File\+Name} & The file name for Assets archive \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true for success, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_data_banker_abe89b350c9164463f7ea6f85b3bd85ac}\label{class_t_data_banker_abe89b350c9164463f7ea6f85b3bd85ac}} 
+\index{TDataBanker@{TDataBanker}!CitiesCreateArchive@{CitiesCreateArchive}}
+\index{CitiesCreateArchive@{CitiesCreateArchive}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{CitiesCreateArchive()}{CitiesCreateArchive()}}
+{\footnotesize\ttfamily void TData\+Banker\+::\+Cities\+Create\+Archive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates an empty Cities archive. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_data_banker_ae1f389594c5d21037d83adbf271133a1}\label{class_t_data_banker_ae1f389594c5d21037d83adbf271133a1}} 
+\index{TDataBanker@{TDataBanker}!CitiesLoadFromFile@{CitiesLoadFromFile}}
+\index{CitiesLoadFromFile@{CitiesLoadFromFile}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{CitiesLoadFromFile()}{CitiesLoadFromFile()}}
+{\footnotesize\ttfamily bool TData\+Banker\+::\+Cities\+Load\+From\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{str\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+Load from file a Cities archive. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em str\+File\+Name} & The file name for Cities archive \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true for success, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_data_banker_ad3fbea1169fccced7320c6c7abd6de3a}\label{class_t_data_banker_ad3fbea1169fccced7320c6c7abd6de3a}} 
+\index{TDataBanker@{TDataBanker}!CustomersCreateArchive@{CustomersCreateArchive}}
+\index{CustomersCreateArchive@{CustomersCreateArchive}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{CustomersCreateArchive()}{CustomersCreateArchive()}}
+{\footnotesize\ttfamily void TData\+Banker\+::\+Customers\+Create\+Archive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates an empty Customers archive. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_data_banker_a7e46bbacb1cddff12b0df2619d70110c}\label{class_t_data_banker_a7e46bbacb1cddff12b0df2619d70110c}} 
+\index{TDataBanker@{TDataBanker}!CustomersLoadFromFile@{CustomersLoadFromFile}}
+\index{CustomersLoadFromFile@{CustomersLoadFromFile}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{CustomersLoadFromFile()}{CustomersLoadFromFile()}}
+{\footnotesize\ttfamily bool TData\+Banker\+::\+Customers\+Load\+From\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{str\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+Load from file an Customers archive. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em str\+File\+Name} & The file name for Customers archive \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true for success, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_data_banker_a6c6ecbed58488581780fc3ee3ff2eed7}\label{class_t_data_banker_a6c6ecbed58488581780fc3ee3ff2eed7}} 
+\index{TDataBanker@{TDataBanker}!CustomersSaveToFile@{CustomersSaveToFile}}
+\index{CustomersSaveToFile@{CustomersSaveToFile}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{CustomersSaveToFile()}{CustomersSaveToFile()}}
+{\footnotesize\ttfamily bool TData\+Banker\+::\+Customers\+Save\+To\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{str\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+Saves to file an Customers archive. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em str\+File\+Name} & The file name for Customers archive \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true for success, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_data_banker_a03639cd6ae3b63d51ce552b7c7212d71}\label{class_t_data_banker_a03639cd6ae3b63d51ce552b7c7212d71}} 
+\index{TDataBanker@{TDataBanker}!GetAssets@{GetAssets}}
+\index{GetAssets@{GetAssets}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{GetAssets()}{GetAssets()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_t_assets_archive}{TAssets\+Archive}} $\ast$const TData\+Banker\+::\+Get\+Assets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the Assets contained in the archive. 
+
+\DoxyHorRuler{0}
+ \begin{DoxyReturn}{Returns}
+Returns a pointer to the Assets vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_data_banker_a65c9b37e28f8d15e1939174e706ce794}\label{class_t_data_banker_a65c9b37e28f8d15e1939174e706ce794}} 
+\index{TDataBanker@{TDataBanker}!GetCities@{GetCities}}
+\index{GetCities@{GetCities}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{GetCities()}{GetCities()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_cities_archive}{TCities\+Archive}} $\ast$const TData\+Banker\+::\+Get\+Cities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the Cities contained in the archive. 
+
+\DoxyHorRuler{0}
+ \begin{DoxyReturn}{Returns}
+Returns a pointer to the Cities vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_data_banker_af108916327e330fee9ac2a7f0f1048c4}\label{class_t_data_banker_af108916327e330fee9ac2a7f0f1048c4}} 
+\index{TDataBanker@{TDataBanker}!GetCities@{GetCities}}
+\index{GetCities@{GetCities}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{GetCities()}{GetCities()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void TData\+Banker\+::\+Get\+Cities (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{cities_8h_a4075b5f77f5b5ea671ccbfe28e3390d7}{TVec\+Cities}} \&}]{Cities }\end{DoxyParamCaption})}
+
+
+
+Gets the Cities contained in the archive. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em Cities} & Reference to a Cities vector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_data_banker_a20715976e83a2943616e07855bdb8e54}\label{class_t_data_banker_a20715976e83a2943616e07855bdb8e54}} 
+\index{TDataBanker@{TDataBanker}!GetCustomers@{GetCustomers}}
+\index{GetCustomers@{GetCustomers}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{GetCustomers()}{GetCustomers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_customers_archive}{TCustomers\+Archive}} $\ast$const TData\+Banker\+::\+Get\+Customers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the Customers contained in the archive. 
+
+\DoxyHorRuler{0}
+ \begin{DoxyReturn}{Returns}
+Returns a pointer to the Customers vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_data_banker_a2e57608e2f021ad973bf4d4d135a0f1e}\label{class_t_data_banker_a2e57608e2f021ad973bf4d4d135a0f1e}} 
+\index{TDataBanker@{TDataBanker}!HaveAssets@{HaveAssets}}
+\index{HaveAssets@{HaveAssets}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{HaveAssets()}{HaveAssets()}}
+{\footnotesize\ttfamily bool TData\+Banker\+::\+Have\+Assets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks for Assets archive emptiness. 
+
+\DoxyHorRuler{0}
+ \begin{DoxyReturn}{Returns}
+Returns true if Assets archive is not empty, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_data_banker_ad9485d099b1c78e5548c2d206379c62f}\label{class_t_data_banker_ad9485d099b1c78e5548c2d206379c62f}} 
+\index{TDataBanker@{TDataBanker}!HaveCities@{HaveCities}}
+\index{HaveCities@{HaveCities}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{HaveCities()}{HaveCities()}}
+{\footnotesize\ttfamily bool TData\+Banker\+::\+Have\+Cities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks for Cities archive emptiness. 
+
+\DoxyHorRuler{0}
+ \begin{DoxyReturn}{Returns}
+Returns true if Cities archive is not empty, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_data_banker_a71d73deaf84307f37f5486f053df7bfc}\label{class_t_data_banker_a71d73deaf84307f37f5486f053df7bfc}} 
+\index{TDataBanker@{TDataBanker}!HaveCustomers@{HaveCustomers}}
+\index{HaveCustomers@{HaveCustomers}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{HaveCustomers()}{HaveCustomers()}}
+{\footnotesize\ttfamily bool TData\+Banker\+::\+Have\+Customers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks for Customers archive emptiness. 
+
+\DoxyHorRuler{0}
+ \begin{DoxyReturn}{Returns}
+Returns true if Customers archive is not empty, false otherwise 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_t_data_banker_ac43a524bce3a4a88cdefdf799b3afa25}\label{class_t_data_banker_ac43a524bce3a4a88cdefdf799b3afa25}} 
+\index{TDataBanker@{TDataBanker}!m\_pAssets@{m\_pAssets}}
+\index{m\_pAssets@{m\_pAssets}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{m\_pAssets}{m\_pAssets}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_t_assets_archive}{TAssets\+Archive}}$\ast$ TData\+Banker\+::m\+\_\+p\+Assets\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_t_data_banker_a70596be5220a408f2fd79fface1929f6}\label{class_t_data_banker_a70596be5220a408f2fd79fface1929f6}} 
+\index{TDataBanker@{TDataBanker}!m\_pCities@{m\_pCities}}
+\index{m\_pCities@{m\_pCities}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{m\_pCities}{m\_pCities}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_cities_archive}{TCities\+Archive}}$\ast$ TData\+Banker\+::m\+\_\+p\+Cities\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_t_data_banker_aa3630a2e3882a7a751a4d5e9fe74aab9}\label{class_t_data_banker_aa3630a2e3882a7a751a4d5e9fe74aab9}} 
+\index{TDataBanker@{TDataBanker}!m\_pCustomers@{m\_pCustomers}}
+\index{m\_pCustomers@{m\_pCustomers}!TDataBanker@{TDataBanker}}
+\doxysubsubsection{\texorpdfstring{m\_pCustomers}{m\_pCustomers}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_customers_archive}{TCustomers\+Archive}}$\ast$ TData\+Banker\+::m\+\_\+p\+Customers\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Z\+:/\+F/dev/jobs/immobiliare.\+mingw/immobiliare/sources/\mbox{\hyperlink{databanker_8h}{databanker.\+h}}\item 
+Z\+:/\+F/dev/jobs/immobiliare.\+mingw/immobiliare/sources/\mbox{\hyperlink{databanker_8cpp}{databanker.\+cpp}}\end{DoxyCompactItemize}

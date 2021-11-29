@@ -1,0 +1,180 @@
+\hypertarget{class_t_cities_archive}{}\doxysection{TCities\+Archive Class Reference}
+\label{class_t_cities_archive}\index{TCitiesArchive@{TCitiesArchive}}
+
+
+{\ttfamily \#include $<$cities.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_cities_archive_a585b1c1505bdbf3e9e8c1c02100d09d9}{TCities\+Archive}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_cities_archive_a42f728582eec54a49f910912e0cb4e93}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em Clear the archive. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_cities_archive_aaa63f2987309c5b8a985c32463bf13f1}{Get\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Gets the number of elements in the archive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_cities_archive_a66e52365bfd09e0ab1c5398933e3f9bf}{Get\+Cities}} (\mbox{\hyperlink{cities_8h_a4075b5f77f5b5ea671ccbfe28e3390d7}{TVec\+Cities}} \&Cities)
+\begin{DoxyCompactList}\small\item\em Gets the archive records. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_cities_archive_a79ba035687fa1ccab437a6eb7969e497}{Get\+Regions}} (\mbox{\hyperlink{cities_8h_a6a541cc02e8079aa7cfd07fd0587f9f6}{TVec\+Strings}} \&Regions)
+\begin{DoxyCompactList}\small\item\em Gets all the \char`\"{}regions\char`\"{} field contained in a \char`\"{}cities\char`\"{} archive. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_cities_archive_a78aa31944a36366f192ef0c1e67eb99b}{Load\+From\+File}} (std\+::string str\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Loads the archive from file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_t_cities_archive_ad842d25696f0d751ce3f35b213f58a17}{Parse}} (std\+::string str\+Tuple, \mbox{\hyperlink{struct_t_city}{TCity}} \&City)
+\begin{DoxyCompactList}\small\item\em Parse a string record into single fields. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_cities_archive_a4f14c540c31e66355afe5877e58fba7c}{Is\+Unique}} (\mbox{\hyperlink{cities_8h_a6a541cc02e8079aa7cfd07fd0587f9f6}{TVec\+Strings}} \&Strings, std\+::string str\+Val)
+\begin{DoxyCompactList}\small\item\em Verify the uniqueness of a string in a vector of strings. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{cities_8h_a4075b5f77f5b5ea671ccbfe28e3390d7}{TVec\+Cities}} \mbox{\hyperlink{class_t_cities_archive_a60e64eca2ff84836bb0149b6b62c8dbf}{m\+\_\+\+Cities}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_cities_archive_a585b1c1505bdbf3e9e8c1c02100d09d9}\label{class_t_cities_archive_a585b1c1505bdbf3e9e8c1c02100d09d9}} 
+\index{TCitiesArchive@{TCitiesArchive}!TCitiesArchive@{TCitiesArchive}}
+\index{TCitiesArchive@{TCitiesArchive}!TCitiesArchive@{TCitiesArchive}}
+\doxysubsubsection{\texorpdfstring{TCitiesArchive()}{TCitiesArchive()}}
+{\footnotesize\ttfamily TCities\+Archive\+::\+TCities\+Archive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\DoxyHorRuler{0}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_cities_archive_a42f728582eec54a49f910912e0cb4e93}\label{class_t_cities_archive_a42f728582eec54a49f910912e0cb4e93}} 
+\index{TCitiesArchive@{TCitiesArchive}!Clear@{Clear}}
+\index{Clear@{Clear}!TCitiesArchive@{TCitiesArchive}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void TCities\+Archive\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clear the archive. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_cities_archive_a66e52365bfd09e0ab1c5398933e3f9bf}\label{class_t_cities_archive_a66e52365bfd09e0ab1c5398933e3f9bf}} 
+\index{TCitiesArchive@{TCitiesArchive}!GetCities@{GetCities}}
+\index{GetCities@{GetCities}!TCitiesArchive@{TCitiesArchive}}
+\doxysubsubsection{\texorpdfstring{GetCities()}{GetCities()}}
+{\footnotesize\ttfamily void TCities\+Archive\+::\+Get\+Cities (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{cities_8h_a4075b5f77f5b5ea671ccbfe28e3390d7}{TVec\+Cities}} \&}]{Cities }\end{DoxyParamCaption})}
+
+
+
+Gets the archive records. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em Cities} & Reference to a vector of cities objects \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_cities_archive_aaa63f2987309c5b8a985c32463bf13f1}\label{class_t_cities_archive_aaa63f2987309c5b8a985c32463bf13f1}} 
+\index{TCitiesArchive@{TCitiesArchive}!GetCount@{GetCount}}
+\index{GetCount@{GetCount}!TCitiesArchive@{TCitiesArchive}}
+\doxysubsubsection{\texorpdfstring{GetCount()}{GetCount()}}
+{\footnotesize\ttfamily int TCities\+Archive\+::\+Get\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the number of elements in the archive. 
+
+\DoxyHorRuler{0}
+ \begin{DoxyReturn}{Returns}
+The number of element in the archive 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_cities_archive_a79ba035687fa1ccab437a6eb7969e497}\label{class_t_cities_archive_a79ba035687fa1ccab437a6eb7969e497}} 
+\index{TCitiesArchive@{TCitiesArchive}!GetRegions@{GetRegions}}
+\index{GetRegions@{GetRegions}!TCitiesArchive@{TCitiesArchive}}
+\doxysubsubsection{\texorpdfstring{GetRegions()}{GetRegions()}}
+{\footnotesize\ttfamily void TCities\+Archive\+::\+Get\+Regions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{cities_8h_a6a541cc02e8079aa7cfd07fd0587f9f6}{TVec\+Strings}} \&}]{Regions }\end{DoxyParamCaption})}
+
+
+
+Gets all the \char`\"{}regions\char`\"{} field contained in a \char`\"{}cities\char`\"{} archive. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em Regions} & Reference to a vector of \char`\"{}region\char`\"{} strings \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_cities_archive_a4f14c540c31e66355afe5877e58fba7c}\label{class_t_cities_archive_a4f14c540c31e66355afe5877e58fba7c}} 
+\index{TCitiesArchive@{TCitiesArchive}!IsUnique@{IsUnique}}
+\index{IsUnique@{IsUnique}!TCitiesArchive@{TCitiesArchive}}
+\doxysubsubsection{\texorpdfstring{IsUnique()}{IsUnique()}}
+{\footnotesize\ttfamily bool TCities\+Archive\+::\+Is\+Unique (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{cities_8h_a6a541cc02e8079aa7cfd07fd0587f9f6}{TVec\+Strings}} \&}]{Strings,  }\item[{std\+::string}]{str\+Val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Verify the uniqueness of a string in a vector of strings. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em Strings} & Vector of string \\
+\hline
+{\em str\+Val} & The string to verify the uniqueness of \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_cities_archive_a78aa31944a36366f192ef0c1e67eb99b}\label{class_t_cities_archive_a78aa31944a36366f192ef0c1e67eb99b}} 
+\index{TCitiesArchive@{TCitiesArchive}!LoadFromFile@{LoadFromFile}}
+\index{LoadFromFile@{LoadFromFile}!TCitiesArchive@{TCitiesArchive}}
+\doxysubsubsection{\texorpdfstring{LoadFromFile()}{LoadFromFile()}}
+{\footnotesize\ttfamily bool TCities\+Archive\+::\+Load\+From\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{str\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+Loads the archive from file. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em str\+File\+Name} & The file name containing the archive \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true for success, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_cities_archive_ad842d25696f0d751ce3f35b213f58a17}\label{class_t_cities_archive_ad842d25696f0d751ce3f35b213f58a17}} 
+\index{TCitiesArchive@{TCitiesArchive}!Parse@{Parse}}
+\index{Parse@{Parse}!TCitiesArchive@{TCitiesArchive}}
+\doxysubsubsection{\texorpdfstring{Parse()}{Parse()}}
+{\footnotesize\ttfamily bool TCities\+Archive\+::\+Parse (\begin{DoxyParamCaption}\item[{std\+::string}]{str\+Tuple,  }\item[{\mbox{\hyperlink{struct_t_city}{TCity}} \&}]{City }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Parse a string record into single fields. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em str\+Tuple} & The string of values separated by comma \\
+\hline
+{\em City} & Reference to a City object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true for success, false otherwise 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_t_cities_archive_a60e64eca2ff84836bb0149b6b62c8dbf}\label{class_t_cities_archive_a60e64eca2ff84836bb0149b6b62c8dbf}} 
+\index{TCitiesArchive@{TCitiesArchive}!m\_Cities@{m\_Cities}}
+\index{m\_Cities@{m\_Cities}!TCitiesArchive@{TCitiesArchive}}
+\doxysubsubsection{\texorpdfstring{m\_Cities}{m\_Cities}}
+{\footnotesize\ttfamily \mbox{\hyperlink{cities_8h_a4075b5f77f5b5ea671ccbfe28e3390d7}{TVec\+Cities}} TCities\+Archive\+::m\+\_\+\+Cities\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Z\+:/\+F/dev/jobs/immobiliare.\+mingw/immobiliare/sources/\mbox{\hyperlink{cities_8h}{cities.\+h}}\item 
+Z\+:/\+F/dev/jobs/immobiliare.\+mingw/immobiliare/sources/\mbox{\hyperlink{cities_8cpp}{cities.\+cpp}}\end{DoxyCompactItemize}

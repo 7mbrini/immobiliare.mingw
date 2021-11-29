@@ -1,0 +1,101 @@
+\hypertarget{libguidll_8h_source}{}\doxysection{libguidll.\+h}
+\label{libguidll_8h_source}\index{Z:/F/dev/jobs/immobiliare.mingw/immobiliare/sources/libguidll.h@{Z:/F/dev/jobs/immobiliare.mingw/immobiliare/sources/libguidll.h}}
+\mbox{\hyperlink{libguidll_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{2 \textcolor{comment}{    author: Francesco Settembrini}}
+\DoxyCodeLine{3 \textcolor{comment}{    last update: 8/11/2021, 28/11/2021}}
+\DoxyCodeLine{4 \textcolor{comment}{    e-\/mail: mailto:francesco.settembrini@poliba.it}}
+\DoxyCodeLine{5 \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <windows.h>}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keywordtype}{void} \mbox{\hyperlink{libguidll_8h_aa2e2be43e4cad8acbba3fca6a2293d1e}{libgui\_Init}}(HINSTANCE \mbox{\hyperlink{immobiliare_8cpp_a44f41244c97693b2fbd5244bcb1e86ec}{hInst}});}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14                                             \textcolor{comment}{// function pointer prototypes}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a034ea42385e704026e06413eb6eef550}{VOID}} (WINAPI \_\_stdcall *libgui\_ShowHello)();}
+\DoxyCodeLine{17 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a034ea42385e704026e06413eb6eef550}{VOID}} (WINAPI \_\_stdcall *libgui\_ShowMessage)(LPCSTR pMessage);}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a034ea42385e704026e06413eb6eef550}{VOID}} (WINAPI \_\_stdcall *libgui\_Show)(\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} pForm);}
+\DoxyCodeLine{20 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a034ea42385e704026e06413eb6eef550}{VOID}} (WINAPI \_\_stdcall *libgui\_Hide)(\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} pForm);}
+\DoxyCodeLine{21 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a034ea42385e704026e06413eb6eef550}{VOID}} (WINAPI \_\_stdcall *libgui\_Move)(\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} pForm,}
+\DoxyCodeLine{22     \textcolor{keywordtype}{int} \mbox{\hyperlink{libguidll_8h_ab0f474062ae27732b1519b12216835ec}{nLeft}}, \textcolor{keywordtype}{int} \mbox{\hyperlink{libguidll_8h_a6d920c93fec86db099866f7062125cc8}{nTop}}, \textcolor{keywordtype}{int} \mbox{\hyperlink{libguidll_8h_a4a0bf953697addb6f87c9f847b1758ae}{nWidth}}, \textcolor{keywordtype}{int} \mbox{\hyperlink{libguidll_8h_a5d954ff01f165315a52d616a8172e2da}{nHeight}});}
+\DoxyCodeLine{23 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a034ea42385e704026e06413eb6eef550}{VOID}} (WINAPI \_\_stdcall *libgui\_ShowModal)(\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} pForm);}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} (WINAPI \_\_stdcall *libgui\_CreateFormDebug)();}
+\DoxyCodeLine{26 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} (WINAPI \_\_stdcall *libgui\_DebugPrint)(\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} pDebugForm, LPCSTR \mbox{\hyperlink{libguidll_8h_af05c5420c6eeece3552b24c19d5c2c42}{pString}});}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} (WINAPI \_\_stdcall *libgui\_CreateFormAssets)(\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} pDB, HWND \mbox{\hyperlink{libguidll_8h_a85e07f25595500a57ddb9cbe3ee4c5f5}{hWndMsgs}});}
+\DoxyCodeLine{29 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} (WINAPI \_\_stdcall *libgui\_CreateFormCustomers)(\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} pDB, HWND \mbox{\hyperlink{libguidll_8h_a85e07f25595500a57ddb9cbe3ee4c5f5}{hWndMsgs}});}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} (WINAPI \_\_stdcall *libgui\_CreateFormFindAssets)(\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} pDB, HWND \mbox{\hyperlink{libguidll_8h_a85e07f25595500a57ddb9cbe3ee4c5f5}{hWndMsgs}});}
+\DoxyCodeLine{32 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} (WINAPI \_\_stdcall *libgui\_CreateFormFindCustomers)(\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} pDB, HWND \mbox{\hyperlink{libguidll_8h_a85e07f25595500a57ddb9cbe3ee4c5f5}{hWndMsgs}});}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} (WINAPI \_\_stdcall *libgui\_CreateFormQueries)(\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} pDB, HWND \mbox{\hyperlink{libguidll_8h_a85e07f25595500a57ddb9cbe3ee4c5f5}{hWndMsgs}});}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} (WINAPI \_\_stdcall *libgui\_DestroyFormDebug)(\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} pForm);}
+\DoxyCodeLine{37 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} (WINAPI \_\_stdcall *libgui\_DestroyFormAssets)(\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} pForm);}
+\DoxyCodeLine{38 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} (WINAPI \_\_stdcall *libgui\_DestroyFormCustomers)(\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} pForm);}
+\DoxyCodeLine{39 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} (WINAPI \_\_stdcall *libgui\_DestroyFormFindAssets)(\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} pForm);}
+\DoxyCodeLine{40 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} (WINAPI \_\_stdcall *libgui\_DestroyFormFindCustomers)(\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} pForm);}
+\DoxyCodeLine{41 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} (WINAPI \_\_stdcall *libgui\_DestroyFormQueries)(\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} pForm);}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} (WINAPI \_\_stdcall *libgui\_DBCreate)();}
+\DoxyCodeLine{45 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a034ea42385e704026e06413eb6eef550}{VOID}} (WINAPI \_\_stdcall *libgui\_DBAssetsCreateArchive)(\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} pDB);}
+\DoxyCodeLine{46 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a034ea42385e704026e06413eb6eef550}{VOID}} (WINAPI \_\_stdcall *libgui\_DBCustomersCreateArchive)(\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} pDB);}
+\DoxyCodeLine{47 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} (WINAPI \_\_stdcall *libgui\_DBCitiesLoadFromFile)(\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} pDB, LPCSTR \mbox{\hyperlink{libguidll_8h_ac8887f0428f801820b8018d62f4d1062}{pFileName}});}
+\DoxyCodeLine{48 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} (WINAPI \_\_stdcall *libgui\_DBAssetsLoadFromFile)(\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} pDB, LPCSTR \mbox{\hyperlink{libguidll_8h_ac8887f0428f801820b8018d62f4d1062}{pFileName}});}
+\DoxyCodeLine{49 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} (WINAPI \_\_stdcall *libgui\_DBCustomersLoadFromFile)(\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} pDB, LPCSTR \mbox{\hyperlink{libguidll_8h_ac8887f0428f801820b8018d62f4d1062}{pFileName}});}
+\DoxyCodeLine{50 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} (WINAPI \_\_stdcall *libgui\_DBAssetsSaveToFile)(\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} pDB, LPCSTR \mbox{\hyperlink{libguidll_8h_ac8887f0428f801820b8018d62f4d1062}{pFileName}});}
+\DoxyCodeLine{51 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} (WINAPI \_\_stdcall *libgui\_DBCustomersSaveToFile)(\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} pDB, LPCSTR \mbox{\hyperlink{libguidll_8h_ac8887f0428f801820b8018d62f4d1062}{pFileName}});}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a88028fb73923716881a49ed2de40ef3e}{BOOL}} (WINAPI \_\_stdcall *libgui\_DBHaveAssets)(\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} pDB);}
+\DoxyCodeLine{54 \textcolor{keyword}{typedef} \mbox{\hyperlink{libguidll_8h_a88028fb73923716881a49ed2de40ef3e}{BOOL}} (WINAPI \_\_stdcall *libgui\_DBHaveCustomers)(\mbox{\hyperlink{libguidll_8h_a30e3fdcb3a73fc3609cd2bc775b15b2f}{LPVOID}} pDB);}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56                                             \textcolor{comment}{// function pointers}}
+\DoxyCodeLine{57 \textcolor{keyword}{extern} libgui\_ShowHello \mbox{\hyperlink{libguidll_8h_aadce8ee0b1f140c52e75948f7457351f}{fpShowHello}};}
+\DoxyCodeLine{58 \textcolor{keyword}{extern} libgui\_ShowMessage \mbox{\hyperlink{libguidll_8h_a137927b297e2785d7d047116edcbb70c}{fpShowMessage}};}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60 \textcolor{keyword}{extern} libgui\_Show \mbox{\hyperlink{libguidll_8h_ab0dab2951cffda358a6d7e57dde8ce42}{fpFormShow}};}
+\DoxyCodeLine{61 \textcolor{keyword}{extern} libgui\_Hide \mbox{\hyperlink{libguidll_8h_ae120dd57d7985b7b34ba290ee8ad3b7f}{fpFormHide}};}
+\DoxyCodeLine{62 \textcolor{keyword}{extern} libgui\_Move \mbox{\hyperlink{libguidll_8h_ab317df176c2c1ab31f29a5a61dbc0c24}{fpFormMove}};}
+\DoxyCodeLine{63 \textcolor{keyword}{extern} libgui\_ShowModal \mbox{\hyperlink{libguidll_8h_a8ce2ef06840c20f54bc67201c0e53e2e}{fpFormShowModal}};}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65 \textcolor{keyword}{extern} libgui\_CreateFormDebug \mbox{\hyperlink{libguidll_8h_a5a5ae9940ed0afa89ba3f9d851c11cd3}{fpCreateFormDebug}};}
+\DoxyCodeLine{66 \textcolor{keyword}{extern} libgui\_DebugPrint \mbox{\hyperlink{libguidll_8h_a4a9f3f46134d299bb628cecaf497994c}{fpDebugPrint}};}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68 \textcolor{keyword}{extern} libgui\_CreateFormAssets \mbox{\hyperlink{libguidll_8h_a70a62467a343b0c23196d1c1ad2c2b1e}{fpCreateFormAssets}};}
+\DoxyCodeLine{69 \textcolor{keyword}{extern} libgui\_CreateFormCustomers \mbox{\hyperlink{libguidll_8h_a76c1b38e31fa7aa76ca61a695ddd1a90}{fpCreateFormCustomers}};}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71 \textcolor{keyword}{extern} libgui\_CreateFormFindAssets \mbox{\hyperlink{libguidll_8h_ab7eebb64b65be4d0913a25576bff3b03}{fpCreateFormFindAssets}};}
+\DoxyCodeLine{72 \textcolor{keyword}{extern} libgui\_CreateFormFindCustomers \mbox{\hyperlink{libguidll_8h_a803f73bb44a763486053f8893e9ef838}{fpCreateFormFindCustomers}};}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74 \textcolor{keyword}{extern} libgui\_CreateFormQueries \mbox{\hyperlink{libguidll_8h_ae845680c60bf31809ef9ae7a3266138a}{fpCreateFormQueries}};}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76 \textcolor{keyword}{extern} libgui\_DestroyFormDebug \mbox{\hyperlink{libguidll_8h_aa5d7f6cf2d5dc2f6c5b0ae38052d1946}{fpDestroyFormDebug}};}
+\DoxyCodeLine{77 \textcolor{keyword}{extern} libgui\_DestroyFormAssets \mbox{\hyperlink{libguidll_8h_a260e56b90a2e892abb2ab1c049b76f59}{fpDestroyFormAssets}};}
+\DoxyCodeLine{78 \textcolor{keyword}{extern} libgui\_DestroyFormCustomers \mbox{\hyperlink{libguidll_8h_a5937137a60a6dffe2a6d24394e5c0afa}{fpDestroyFormCustomers}};}
+\DoxyCodeLine{79 \textcolor{keyword}{extern} libgui\_DestroyFormFindAssets \mbox{\hyperlink{libguidll_8h_ab45d644f8886a63ff2993fbc93374f8e}{fpDestroyFormFindAssets}};}
+\DoxyCodeLine{80 \textcolor{keyword}{extern} libgui\_DestroyFormFindCustomers \mbox{\hyperlink{libguidll_8h_a59062902ab52e957eeaa1593324e1887}{fpDestroyFormFindCustomers}};}
+\DoxyCodeLine{81 \textcolor{keyword}{extern} libgui\_DestroyFormQueries \mbox{\hyperlink{libguidll_8h_aa856d8c2f4dcfaf82161b1a55946915f}{fpDestroyFormQueries}};}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84 \textcolor{keyword}{extern} libgui\_DBCreate \mbox{\hyperlink{libguidll_8h_af51be149e2c08d82b9371c055508f55f}{fpDBCreate}};}
+\DoxyCodeLine{85 \textcolor{keyword}{extern} libgui\_DBAssetsCreateArchive \mbox{\hyperlink{libguidll_8h_abfb94e182f6885da501cd96a50386c89}{fpDBAssetsCreateArchive}};}
+\DoxyCodeLine{86 \textcolor{keyword}{extern} libgui\_DBCustomersCreateArchive \mbox{\hyperlink{libguidll_8h_ac854b8a037c2c7ce188dd0f670cee821}{fpDBCustomersCreateArchive}};}
+\DoxyCodeLine{87 \textcolor{keyword}{extern} libgui\_DBCitiesLoadFromFile \mbox{\hyperlink{libguidll_8h_ae7b75947c59bb64a38ca506efd3e64a6}{fpDBCitiesLoadFromFile}};}
+\DoxyCodeLine{88 \textcolor{keyword}{extern} libgui\_DBAssetsLoadFromFile \mbox{\hyperlink{libguidll_8h_a9051f6303ef0b57d729456d35d49da6f}{fpDBAssetsLoadFromFile}};}
+\DoxyCodeLine{89 \textcolor{keyword}{extern} libgui\_DBCustomersLoadFromFile \mbox{\hyperlink{libguidll_8h_a2da47f75808e69fbc5908321872147b9}{fpDBCustomersLoadFromFile}};}
+\DoxyCodeLine{90 \textcolor{keyword}{extern} libgui\_DBAssetsSaveToFile \mbox{\hyperlink{libguidll_8h_a208f53ff679ea40c7e2ec10691e21350}{fpDBAssetsSaveToFile}};}
+\DoxyCodeLine{91 \textcolor{keyword}{extern} libgui\_DBCustomersSaveToFile \mbox{\hyperlink{libguidll_8h_a665e2b0c8c98a7b1f9b0652a3e4e4f21}{fpDBCustomersSaveToFile}};}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93 \textcolor{keyword}{extern} libgui\_DBHaveAssets \mbox{\hyperlink{libguidll_8h_a616a7c8cfa16036ad6c0ccf711c7e501}{fpDBHaveAssets}};}
+\DoxyCodeLine{94 \textcolor{keyword}{extern} libgui\_DBHaveCustomers \mbox{\hyperlink{libguidll_8h_ab9dc6d8cd637a8aa19ce439e29953608}{fpDBHaveCustomers}};}
+\DoxyCodeLine{95 }
+
+\end{DoxyCode}

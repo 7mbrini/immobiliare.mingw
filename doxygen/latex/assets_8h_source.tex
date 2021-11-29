@@ -1,0 +1,127 @@
+\hypertarget{assets_8h_source}{}\doxysection{assets.\+h}
+\label{assets_8h_source}\index{Z:/F/dev/jobs/immobiliare.mingw/immobiliare/sources/assets.h@{Z:/F/dev/jobs/immobiliare.mingw/immobiliare/sources/assets.h}}
+\mbox{\hyperlink{assets_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{2 \textcolor{comment}{    author: Francesco Settembrini}}
+\DoxyCodeLine{3 \textcolor{comment}{    last update: 8/11/2021, 28/11/2021}}
+\DoxyCodeLine{4 \textcolor{comment}{    e-\/mail: mailto:francesco.settembrini@poliba.it}}
+\DoxyCodeLine{5 \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#ifndef assetsH}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define assetsH}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#define ASSET\_MINPRICE      10}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#define ASSET\_NAMESMINLEN   1}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#define ASSET\_NAMESMAXLEN   50}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#define ASSET\_MAGICLEN      64}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#define ASSET\_DESCRMAXLEN   (2<<10) }\textcolor{comment}{// max 2 KB for descriptions}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#define ASSET\_IMAGEMAXSIZE  (2<<14) }\textcolor{comment}{// max \string~32 KB for jpeg images}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{keyword}{enum} \mbox{\hyperlink{assets_8h_a2f6366c4d3d0e44a757c76ba26eed7ae}{enAssetStatus}} \{ \mbox{\hyperlink{assets_8h_a2f6366c4d3d0e44a757c76ba26eed7aead7c274f431ca014924ecc4d479b572cd}{asNone}} = 0, \mbox{\hyperlink{assets_8h_a2f6366c4d3d0e44a757c76ba26eed7aea568aabe0f7cf149b2f0fa0a384633738}{asForRent}}, \mbox{\hyperlink{assets_8h_a2f6366c4d3d0e44a757c76ba26eed7aeab2b1d7b9c1ba4694964c13056027473f}{asRented}}, \mbox{\hyperlink{assets_8h_a2f6366c4d3d0e44a757c76ba26eed7aea128c4957cbbc454a0f53855c45d96ecc}{asForSale}}, \mbox{\hyperlink{assets_8h_a2f6366c4d3d0e44a757c76ba26eed7aea5e6979ca9660753ebcec2af0ee22447e}{asSoldOut}} \};}
+\DoxyCodeLine{24 \textcolor{keyword}{enum} \mbox{\hyperlink{assets_8h_a7943f539a4d8a627c084be860621d5df}{enAssetTypology}} \{ \mbox{\hyperlink{assets_8h_a7943f539a4d8a627c084be860621d5dfa82fb51718e2c00981a2d37bc6fe92593}{atNone}} = 0, \mbox{\hyperlink{assets_8h_a7943f539a4d8a627c084be860621d5dfae3cd1185b3639c3ae446f5527b2bb791}{atTerrain}}, \mbox{\hyperlink{assets_8h_a7943f539a4d8a627c084be860621d5dfaf169bd1ece362f3e8b2ce372bde98735}{atGarage}}, \mbox{\hyperlink{assets_8h_a7943f539a4d8a627c084be860621d5dfa3856776b49eee9fccb05e184beddf390}{atVilla}},}
+\DoxyCodeLine{25     \mbox{\hyperlink{assets_8h_a7943f539a4d8a627c084be860621d5dfababe3cd99d937976367a287be4b871ce}{atApartment}}, \mbox{\hyperlink{assets_8h_a7943f539a4d8a627c084be860621d5dfa843adff48063cf45e6fd09bea0ad0ecb}{atOffice}}, \mbox{\hyperlink{assets_8h_a7943f539a4d8a627c084be860621d5dfa74213f1dbae102593cf135d31438325a}{atCommercial}}, \mbox{\hyperlink{assets_8h_a7943f539a4d8a627c084be860621d5dfa937ceac5712062f2a3649836459510a6}{atIndustrial}} \};}
+\DoxyCodeLine{26 \textcolor{keyword}{enum} \mbox{\hyperlink{assets_8h_afee6c9c29b34412bbad8b20053d51056}{enAssetEpgl}} \{ \mbox{\hyperlink{assets_8h_afee6c9c29b34412bbad8b20053d51056aaa9e5ddb425ebca50d32c96e148ae2b7}{aeNone}} = 0, \mbox{\hyperlink{assets_8h_afee6c9c29b34412bbad8b20053d51056a6ff2d853be391411e31c0cc729bd6265}{aeG}}, \mbox{\hyperlink{assets_8h_afee6c9c29b34412bbad8b20053d51056a00900faf11330e101cba4e1cdceeb9b7}{aeF}}, \mbox{\hyperlink{assets_8h_afee6c9c29b34412bbad8b20053d51056a8a653c880d194e3a2a14b0ea62dd38c8}{aeE}}, \mbox{\hyperlink{assets_8h_afee6c9c29b34412bbad8b20053d51056ac207b5925e803a34941491604df0543c}{aeD}}, \mbox{\hyperlink{assets_8h_afee6c9c29b34412bbad8b20053d51056a8e4d2a0abc145bac32f4f209523e53ba}{aeC}}, \mbox{\hyperlink{assets_8h_afee6c9c29b34412bbad8b20053d51056ab4d7002fa1d532ffba8e8f6301c2cf90}{aeB}}, \mbox{\hyperlink{assets_8h_afee6c9c29b34412bbad8b20053d51056aeac68bfd68afb843e693662ac30bb6c2}{aeA4}}, \mbox{\hyperlink{assets_8h_afee6c9c29b34412bbad8b20053d51056abdb42e45af027aba0bbc55d417fbdff7}{aeA3}}, \mbox{\hyperlink{assets_8h_afee6c9c29b34412bbad8b20053d51056aa3f58d5824c78d5a9dc1724e1a74a315}{aeA2}}, \mbox{\hyperlink{assets_8h_afee6c9c29b34412bbad8b20053d51056a917aa12fcbb9dae9d68b1330850a7ba0}{aeA1}} \};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_t_asset}{TAsset}};}
+\DoxyCodeLine{29 \textcolor{keyword}{typedef} std::vector<TAsset> \mbox{\hyperlink{assets_8h_aaa92180595e3cb8566e1a59eb0f1fef4}{TVecAssets}};}
+\DoxyCodeLine{30 \textcolor{keyword}{typedef} std::vector<TAsset*> \mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVecPtrAssets}};}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_t_asset}{TAsset}}}
+\DoxyCodeLine{34 \{}
+\DoxyCodeLine{35 \textcolor{keyword}{public}:}
+\DoxyCodeLine{36     \mbox{\hyperlink{struct_t_asset_a9c05b7bec925de7089694336a6feac3b}{TAsset}}();}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 \textcolor{keyword}{public}:}
+\DoxyCodeLine{39     \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_t_asset_afae0bde22f8a49109b0436a90f680106}{Read}}(FILE* fp);}
+\DoxyCodeLine{40     \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_t_asset_ad69b21538b663f61411bc3426ea4f46d}{Write}}(FILE* fp);}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     std::string \mbox{\hyperlink{struct_t_asset_a3546c47baa74710242fb72dbe9ca6867}{AsString}}();}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \textcolor{keyword}{public}:}
+\DoxyCodeLine{45     \textcolor{keywordtype}{char} \mbox{\hyperlink{struct_t_asset_a09621a096a685fa26efe85eb9fdb8e51}{m\_strAddress}}[\mbox{\hyperlink{assets_8h_aad8f0ad9210c74f7111316312464b17b}{ASSET\_NAMESMAXLEN}}];}
+\DoxyCodeLine{46     \textcolor{keywordtype}{char} \mbox{\hyperlink{struct_t_asset_a89ff66d41e3d9b0f2af53d45db6feb64}{m\_strCity}}[\mbox{\hyperlink{assets_8h_aad8f0ad9210c74f7111316312464b17b}{ASSET\_NAMESMAXLEN}}];}
+\DoxyCodeLine{47     \textcolor{keywordtype}{char} \mbox{\hyperlink{struct_t_asset_a1fbea273460ac1d9803fc539a0265c8c}{m\_strDescription}}[\mbox{\hyperlink{assets_8h_af42e692a633a66cd906947767d21f70f}{ASSET\_DESCRMAXLEN}}];}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49     \mbox{\hyperlink{assets_8h_afee6c9c29b34412bbad8b20053d51056}{enAssetEpgl}} \mbox{\hyperlink{struct_t_asset_ab2ead77bb6e443b33ec04f752199ea52}{m\_nEpgl}};}
+\DoxyCodeLine{50     \mbox{\hyperlink{assets_8h_a7943f539a4d8a627c084be860621d5df}{enAssetTypology}} \mbox{\hyperlink{struct_t_asset_a7e24d222f328bb052b44a63cbe1f0457}{m\_nTypology}};}
+\DoxyCodeLine{51     \mbox{\hyperlink{assets_8h_a2f6366c4d3d0e44a757c76ba26eed7ae}{enAssetStatus}} \mbox{\hyperlink{struct_t_asset_acbb17a2c880c50e6aba61bfc400bbe00}{m\_nStatus}};}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53     \textcolor{keywordtype}{double} \mbox{\hyperlink{struct_t_asset_aa2d08ec2eeabf9bd03b84bb28e16dbeb}{m\_BuildDate}}, \mbox{\hyperlink{struct_t_asset_a637bf1b51e7ddb11994f7d4d71b87ae6}{m\_SoldDate}};}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55     \textcolor{keywordtype}{unsigned} \mbox{\hyperlink{struct_t_asset_a758b896af67dcdf84bf3372d5da5700c}{m\_nValue}}; \textcolor{comment}{// cadastral value}}
+\DoxyCodeLine{56     \textcolor{keywordtype}{unsigned} \mbox{\hyperlink{struct_t_asset_a356456f6a02479fabb1cb220072b3c20}{m\_nPrice}}; \textcolor{comment}{// rent or selling price}}
+\DoxyCodeLine{57     \textcolor{keywordtype}{unsigned} \mbox{\hyperlink{struct_t_asset_aee3c31ec27f9a2d5e50f18aca322ac0f}{m\_nCap}}, \mbox{\hyperlink{struct_t_asset_a6d627086ef6abe5365c2f872b99c5b0b}{m\_nArea}};}
+\DoxyCodeLine{58     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short} \mbox{\hyperlink{struct_t_asset_ac1ee26cadc2ae49db3250d846d505ce0}{m\_nRooms}}, \mbox{\hyperlink{struct_t_asset_a37594496558b91cdea1ad20f91be893c}{m\_nBathrooms}};}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60     \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_t_asset_a4dd3008fd535a95872a09a4ef76386f9}{m\_bImage}};}
+\DoxyCodeLine{61     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} \mbox{\hyperlink{struct_t_asset_a8655b01e98c088a4c9d1d48d34c8cb8e}{m\_pImage}}[\mbox{\hyperlink{assets_8h_a71b16708365f9a3feb00c2a020e6bbe0}{ASSET\_IMAGEMAXSIZE}}];}
+\DoxyCodeLine{62 \};}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_t_assets_archive}{TAssetsArchive}}}
+\DoxyCodeLine{65 \{}
+\DoxyCodeLine{66 \textcolor{keyword}{public}:}
+\DoxyCodeLine{67     \mbox{\hyperlink{struct_t_assets_archive_af851427f1c98cef09a17fe83eb53d95c}{TAssetsArchive}}();}
+\DoxyCodeLine{68     \mbox{\hyperlink{struct_t_assets_archive_a37f8a45b4e5b63076370654e4819768b}{\string~TAssetsArchive}}();}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70     \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_t_assets_archive_a55eda0b5e3229f0005f8ba4e2f8e1eab}{Clear}}();}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72     \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_t_assets_archive_af232b79abcb267f7608a4b7cded8445d}{Add}}(\mbox{\hyperlink{struct_t_asset}{TAsset}}* pAsset);}
+\DoxyCodeLine{73     \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_t_assets_archive_a3a1e485a9fd9b8734b7446ad4a088d98}{Delete}}(\textcolor{keywordtype}{unsigned} nIndex);}
+\DoxyCodeLine{74     \textcolor{keywordtype}{void} \mbox{\hyperlink{struct_t_assets_archive_a482ee46ac3740222e68036f7816b15e1}{Update}}(\textcolor{keywordtype}{unsigned} nIndex, \mbox{\hyperlink{struct_t_asset}{TAsset}} \textcolor{keyword}{const}\& Asset);}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76     \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_t_assets_archive_a0ce4cef03d318231c143bab7e6f1a19f}{LoadFromFile}}(std::string strFileName);}
+\DoxyCodeLine{77     \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_t_assets_archive_adb96b7977ec147a81825be9059411e87}{SaveToFile}}(std::string strFileName);}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79     \textcolor{keywordtype}{unsigned} \mbox{\hyperlink{struct_t_assets_archive_a255787e2eb6797318817d6e9a6f3f5ee}{GetCount}}();}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81     \mbox{\hyperlink{struct_t_asset}{TAsset}}* \textcolor{keyword}{const} \mbox{\hyperlink{struct_t_assets_archive_a53d29b0af4e4c08aaac8c6f554947797}{GetRecord}}(\textcolor{keywordtype}{unsigned} nId);}
+\DoxyCodeLine{82     \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_t_assets_archive_a463ffd19495bda69e9a2c70c03b4da5d}{GetRecordId}}(\mbox{\hyperlink{struct_t_asset}{TAsset}}* pAsset, \textcolor{keywordtype}{unsigned}\& nId);}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84     \mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVecPtrAssets}} \mbox{\hyperlink{struct_t_assets_archive_a61c34939d9cd9fe19ec188993dbbced1}{GetAssets}}();}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{87     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_t_assets_archive_1_1_t_file_header}{TFileHeader}}}
+\DoxyCodeLine{88     \{}
+\DoxyCodeLine{89         \textcolor{keywordtype}{char} \mbox{\hyperlink{struct_t_assets_archive_1_1_t_file_header_a9b989ea76d37c7b293b0fd09160f8de6}{pMagic}}[\mbox{\hyperlink{assets_8h_a24aa95398e4e36aa2f71f74fa988ec86}{ASSET\_MAGICLEN}}];}
+\DoxyCodeLine{90         \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_t_assets_archive_1_1_t_file_header_a18777fdf35590a51504ca9523831578b}{nRecords}};}
+\DoxyCodeLine{91     \};}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{94     \mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVecPtrAssets}} \mbox{\hyperlink{struct_t_assets_archive_aaffad7e32fa7626cdc5ebd7532edf195}{m\_PtrAssets}};}
+\DoxyCodeLine{95 \};}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98 std::string \mbox{\hyperlink{assets_8h_a2538e5b32a75a307a5468cf6d4bd31a9}{AsString}}(\mbox{\hyperlink{assets_8h_afee6c9c29b34412bbad8b20053d51056}{enAssetEpgl}} nEpgl);}
+\DoxyCodeLine{99 std::string \mbox{\hyperlink{assets_8h_a2538e5b32a75a307a5468cf6d4bd31a9}{AsString}}(\mbox{\hyperlink{assets_8h_a2f6366c4d3d0e44a757c76ba26eed7ae}{enAssetStatus}} nStatus);}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_a7397a33aaf8571d427cc9565d9933643}{FilterByStatus}}(\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVecPtrAssets}}\& Assets, \mbox{\hyperlink{assets_8h_a2f6366c4d3d0e44a757c76ba26eed7ae}{enAssetStatus}} nStatus);}
+\DoxyCodeLine{102 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_aebf27843bfa26934eed57802340e4a0d}{FilterByTypology}}(\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVecPtrAssets}}\& Assets, \mbox{\hyperlink{assets_8h_a7943f539a4d8a627c084be860621d5df}{enAssetTypology}} nTypology);}
+\DoxyCodeLine{103 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_a123d8cf12168a139f13aaebb0a752a4e}{FilterByCity}}(\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVecPtrAssets}}\& Assets, std::string strCityName, \textcolor{keywordtype}{bool} bFullMatch=\textcolor{keyword}{true});}
+\DoxyCodeLine{104 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_a11680f8120a98742437c180ff2935241}{FilterByAddress}}(\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVecPtrAssets}}\& Assets, std::string strAddress, \textcolor{keywordtype}{bool} bFullMatch=\textcolor{keyword}{false});}
+\DoxyCodeLine{105 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_ac9801ddc2c54486fffb6adff8cd64367}{FilterByEpgl}}(\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVecPtrAssets}}\& Assets, \mbox{\hyperlink{assets_8h_afee6c9c29b34412bbad8b20053d51056}{enAssetEpgl}} nEpgl, std::string strIneq);}
+\DoxyCodeLine{106 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_a4eff8670af9fcb429140a8907b9e9c28}{FilterByBuildDate}}(\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVecPtrAssets}}\& Assets, \textcolor{keywordtype}{double} Date, std::string strIneq);}
+\DoxyCodeLine{107 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_ad5c3fb65e16705a28685957058176c95}{FilterByPrice}}(\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVecPtrAssets}}\& Assets, \textcolor{keywordtype}{unsigned} nPrice, std::string strIneq);}
+\DoxyCodeLine{108 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_a4196dab5119fd21ed0df52b7175de31e}{FilterByRooms}}(\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVecPtrAssets}}\& Assets, \textcolor{keywordtype}{unsigned} nRooms, std::string strIneq);}
+\DoxyCodeLine{109 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_a5650b040d1e2df9af0657e44709bf72f}{FilterByBathrooms}}(\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVecPtrAssets}}\& Assets, \textcolor{keywordtype}{unsigned} nRooms, std::string strIneq);}
+\DoxyCodeLine{110 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_a8fb485856808b9ea02286916649e1925}{FilterByArea}}(\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVecPtrAssets}}\& Assets, \textcolor{keywordtype}{unsigned} nArea, std::string strIneq);}
+\DoxyCodeLine{111 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_acbf7a8abbc4637ee8fda1dd462764e49}{FilterByValue}}(\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVecPtrAssets}}\& Assets, \textcolor{keywordtype}{unsigned} nValue, std::string strIneq);}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{113 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_a0316262d048f2502abbd3cdc0b8a26dd}{SortByCity}}(\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVecPtrAssets}}\& Assets, \textcolor{keywordtype}{bool} bAsc = \textcolor{keyword}{true});}
+\DoxyCodeLine{114 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_a6e7f794f3ddf3414b3444f4aaa1eb195}{SortByPrice}}(\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVecPtrAssets}}\& Assets, \textcolor{keywordtype}{bool} bAsc = \textcolor{keyword}{true});}
+\DoxyCodeLine{115 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_ac83b8c5e65061793f76491a2beafad89}{SortByArea}}(\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVecPtrAssets}}\& Assets, \textcolor{keywordtype}{bool} bAsc = \textcolor{keyword}{true});}
+\DoxyCodeLine{116 \textcolor{keywordtype}{void} \mbox{\hyperlink{assets_8h_adca105b145e57c2a1e138051cf86fc4c}{SortByValue}}(\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVecPtrAssets}}\& Assets, \textcolor{keywordtype}{bool} bAsc = \textcolor{keyword}{true});}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{118 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{119 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{121 }
+
+\end{DoxyCode}

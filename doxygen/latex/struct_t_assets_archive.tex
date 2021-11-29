@@ -1,0 +1,243 @@
+\hypertarget{struct_t_assets_archive}{}\doxysection{TAssets\+Archive Struct Reference}
+\label{struct_t_assets_archive}\index{TAssetsArchive@{TAssetsArchive}}
+
+
+{\ttfamily \#include $<$assets.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_t_assets_archive_1_1_t_file_header}{TFile\+Header}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_t_assets_archive_af851427f1c98cef09a17fe83eb53d95c}{TAssets\+Archive}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_t_assets_archive_a37f8a45b4e5b63076370654e4819768b}{$\sim$\+TAssets\+Archive}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_t_assets_archive_a55eda0b5e3229f0005f8ba4e2f8e1eab}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em Clears the archive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_t_assets_archive_af232b79abcb267f7608a4b7cded8445d}{Add}} (\mbox{\hyperlink{struct_t_asset}{TAsset}} $\ast$p\+Asset)
+\begin{DoxyCompactList}\small\item\em Adds a record to the archive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_t_assets_archive_a3a1e485a9fd9b8734b7446ad4a088d98}{Delete}} (unsigned n\+Index)
+\begin{DoxyCompactList}\small\item\em Deletes a record from the archive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_t_assets_archive_a482ee46ac3740222e68036f7816b15e1}{Update}} (unsigned n\+Index, \mbox{\hyperlink{struct_t_asset}{TAsset}} const \&Asset)
+\begin{DoxyCompactList}\small\item\em Updates a record of the archive. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_t_assets_archive_a0ce4cef03d318231c143bab7e6f1a19f}{Load\+From\+File}} (std\+::string str\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Loads archives from file. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_t_assets_archive_adb96b7977ec147a81825be9059411e87}{Save\+To\+File}} (std\+::string str\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Saves archives to file. \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{struct_t_assets_archive_a255787e2eb6797318817d6e9a6f3f5ee}{Get\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Gets the count of the assets contained in the archive. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_t_asset}{TAsset}} $\ast$const \mbox{\hyperlink{struct_t_assets_archive_a53d29b0af4e4c08aaac8c6f554947797}{Get\+Record}} (unsigned n\+Id)
+\begin{DoxyCompactList}\small\item\em Gets a record corresponding to a given index in the archive. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_t_assets_archive_a463ffd19495bda69e9a2c70c03b4da5d}{Get\+Record\+Id}} (\mbox{\hyperlink{struct_t_asset}{TAsset}} $\ast$p\+Asset, unsigned \&n\+Id)
+\begin{DoxyCompactList}\small\item\em Gets the position in the archive corresponding to a specified Asset. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \mbox{\hyperlink{struct_t_assets_archive_a61c34939d9cd9fe19ec188993dbbced1}{Get\+Assets}} ()
+\begin{DoxyCompactList}\small\item\em Gets the Assets contained in the archive. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} \mbox{\hyperlink{struct_t_assets_archive_aaffad7e32fa7626cdc5ebd7532edf195}{m\+\_\+\+Ptr\+Assets}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_t_assets_archive_af851427f1c98cef09a17fe83eb53d95c}\label{struct_t_assets_archive_af851427f1c98cef09a17fe83eb53d95c}} 
+\index{TAssetsArchive@{TAssetsArchive}!TAssetsArchive@{TAssetsArchive}}
+\index{TAssetsArchive@{TAssetsArchive}!TAssetsArchive@{TAssetsArchive}}
+\doxysubsubsection{\texorpdfstring{TAssetsArchive()}{TAssetsArchive()}}
+{\footnotesize\ttfamily TAssets\+Archive\+::\+TAssets\+Archive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{struct_t_assets_archive_a37f8a45b4e5b63076370654e4819768b}\label{struct_t_assets_archive_a37f8a45b4e5b63076370654e4819768b}} 
+\index{TAssetsArchive@{TAssetsArchive}!````~TAssetsArchive@{$\sim$TAssetsArchive}}
+\index{````~TAssetsArchive@{$\sim$TAssetsArchive}!TAssetsArchive@{TAssetsArchive}}
+\doxysubsubsection{\texorpdfstring{$\sim$TAssetsArchive()}{~TAssetsArchive()}}
+{\footnotesize\ttfamily TAssets\+Archive\+::$\sim$\+TAssets\+Archive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\DoxyHorRuler{0}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_t_assets_archive_af232b79abcb267f7608a4b7cded8445d}\label{struct_t_assets_archive_af232b79abcb267f7608a4b7cded8445d}} 
+\index{TAssetsArchive@{TAssetsArchive}!Add@{Add}}
+\index{Add@{Add}!TAssetsArchive@{TAssetsArchive}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void TAssets\+Archive\+::\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_t_asset}{TAsset}} $\ast$}]{p\+Asset }\end{DoxyParamCaption})}
+
+
+
+Adds a record to the archive. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{struct_t_assets_archive_a55eda0b5e3229f0005f8ba4e2f8e1eab}\label{struct_t_assets_archive_a55eda0b5e3229f0005f8ba4e2f8e1eab}} 
+\index{TAssetsArchive@{TAssetsArchive}!Clear@{Clear}}
+\index{Clear@{Clear}!TAssetsArchive@{TAssetsArchive}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void TAssets\+Archive\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears the archive. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{struct_t_assets_archive_a3a1e485a9fd9b8734b7446ad4a088d98}\label{struct_t_assets_archive_a3a1e485a9fd9b8734b7446ad4a088d98}} 
+\index{TAssetsArchive@{TAssetsArchive}!Delete@{Delete}}
+\index{Delete@{Delete}!TAssetsArchive@{TAssetsArchive}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily void TAssets\+Archive\+::\+Delete (\begin{DoxyParamCaption}\item[{unsigned}]{n\+Index }\end{DoxyParamCaption})}
+
+
+
+Deletes a record from the archive. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{struct_t_assets_archive_a61c34939d9cd9fe19ec188993dbbced1}\label{struct_t_assets_archive_a61c34939d9cd9fe19ec188993dbbced1}} 
+\index{TAssetsArchive@{TAssetsArchive}!GetAssets@{GetAssets}}
+\index{GetAssets@{GetAssets}!TAssetsArchive@{TAssetsArchive}}
+\doxysubsubsection{\texorpdfstring{GetAssets()}{GetAssets()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} TAssets\+Archive\+::\+Get\+Assets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the Assets contained in the archive. 
+
+\DoxyHorRuler{0}
+ \begin{DoxyReturn}{Returns}
+Returns a vector of pointers to the Assets 
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_t_assets_archive_a255787e2eb6797318817d6e9a6f3f5ee}\label{struct_t_assets_archive_a255787e2eb6797318817d6e9a6f3f5ee}} 
+\index{TAssetsArchive@{TAssetsArchive}!GetCount@{GetCount}}
+\index{GetCount@{GetCount}!TAssetsArchive@{TAssetsArchive}}
+\doxysubsubsection{\texorpdfstring{GetCount()}{GetCount()}}
+{\footnotesize\ttfamily unsigned TAssets\+Archive\+::\+Get\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the count of the assets contained in the archive. 
+
+\DoxyHorRuler{0}
+ \begin{DoxyReturn}{Returns}
+Returns the count of Assets in the archive 
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_t_assets_archive_a53d29b0af4e4c08aaac8c6f554947797}\label{struct_t_assets_archive_a53d29b0af4e4c08aaac8c6f554947797}} 
+\index{TAssetsArchive@{TAssetsArchive}!GetRecord@{GetRecord}}
+\index{GetRecord@{GetRecord}!TAssetsArchive@{TAssetsArchive}}
+\doxysubsubsection{\texorpdfstring{GetRecord()}{GetRecord()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_t_asset}{TAsset}} $\ast$const TAssets\+Archive\+::\+Get\+Record (\begin{DoxyParamCaption}\item[{unsigned}]{n\+Id }\end{DoxyParamCaption})}
+
+
+
+Gets a record corresponding to a given index in the archive. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em n\+Id} & The position of the record in the archive \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a pointer to an Asset object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_t_assets_archive_a463ffd19495bda69e9a2c70c03b4da5d}\label{struct_t_assets_archive_a463ffd19495bda69e9a2c70c03b4da5d}} 
+\index{TAssetsArchive@{TAssetsArchive}!GetRecordId@{GetRecordId}}
+\index{GetRecordId@{GetRecordId}!TAssetsArchive@{TAssetsArchive}}
+\doxysubsubsection{\texorpdfstring{GetRecordId()}{GetRecordId()}}
+{\footnotesize\ttfamily bool TAssets\+Archive\+::\+Get\+Record\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_t_asset}{TAsset}} $\ast$}]{p\+Asset,  }\item[{unsigned \&}]{n\+Id }\end{DoxyParamCaption})}
+
+
+
+Gets the position in the archive corresponding to a specified Asset. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em p\+Asset} & Pointer to an Asset object \\
+\hline
+{\em n\+Id} & Reference for the position of p\+Asset in the archive \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true for success, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_t_assets_archive_a0ce4cef03d318231c143bab7e6f1a19f}\label{struct_t_assets_archive_a0ce4cef03d318231c143bab7e6f1a19f}} 
+\index{TAssetsArchive@{TAssetsArchive}!LoadFromFile@{LoadFromFile}}
+\index{LoadFromFile@{LoadFromFile}!TAssetsArchive@{TAssetsArchive}}
+\doxysubsubsection{\texorpdfstring{LoadFromFile()}{LoadFromFile()}}
+{\footnotesize\ttfamily bool TAssets\+Archive\+::\+Load\+From\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{str\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+Loads archives from file. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em str\+File\+Name} & The file name for Assets archives \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true for success, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_t_assets_archive_adb96b7977ec147a81825be9059411e87}\label{struct_t_assets_archive_adb96b7977ec147a81825be9059411e87}} 
+\index{TAssetsArchive@{TAssetsArchive}!SaveToFile@{SaveToFile}}
+\index{SaveToFile@{SaveToFile}!TAssetsArchive@{TAssetsArchive}}
+\doxysubsubsection{\texorpdfstring{SaveToFile()}{SaveToFile()}}
+{\footnotesize\ttfamily bool TAssets\+Archive\+::\+Save\+To\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{str\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+Saves archives to file. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em str\+File\+Name} & The file name for Assets archives \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true for success, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_t_assets_archive_a482ee46ac3740222e68036f7816b15e1}\label{struct_t_assets_archive_a482ee46ac3740222e68036f7816b15e1}} 
+\index{TAssetsArchive@{TAssetsArchive}!Update@{Update}}
+\index{Update@{Update}!TAssetsArchive@{TAssetsArchive}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void TAssets\+Archive\+::\+Update (\begin{DoxyParamCaption}\item[{unsigned}]{n\+Index,  }\item[{\mbox{\hyperlink{struct_t_asset}{TAsset}} const \&}]{Asset }\end{DoxyParamCaption})}
+
+
+
+Updates a record of the archive. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em n\+Index} & The position of the record in the archive \\
+\hline
+{\em Asset} & The Asset record \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_t_assets_archive_aaffad7e32fa7626cdc5ebd7532edf195}\label{struct_t_assets_archive_aaffad7e32fa7626cdc5ebd7532edf195}} 
+\index{TAssetsArchive@{TAssetsArchive}!m\_PtrAssets@{m\_PtrAssets}}
+\index{m\_PtrAssets@{m\_PtrAssets}!TAssetsArchive@{TAssetsArchive}}
+\doxysubsubsection{\texorpdfstring{m\_PtrAssets}{m\_PtrAssets}}
+{\footnotesize\ttfamily \mbox{\hyperlink{assets_8h_a7f52d3f4ab779165e9618fa549a3c440}{TVec\+Ptr\+Assets}} TAssets\+Archive\+::m\+\_\+\+Ptr\+Assets\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Z\+:/\+F/dev/jobs/immobiliare.\+mingw/immobiliare/sources/\mbox{\hyperlink{assets_8h}{assets.\+h}}\item 
+Z\+:/\+F/dev/jobs/immobiliare.\+mingw/immobiliare/sources/\mbox{\hyperlink{assets_8cpp}{assets.\+cpp}}\end{DoxyCompactItemize}

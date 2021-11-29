@@ -1,0 +1,51 @@
+\hypertarget{utils_8h_source}{}\doxysection{utils.\+h}
+\label{utils_8h_source}\index{Z:/F/dev/jobs/immobiliare.mingw/immobiliare/sources/utils.h@{Z:/F/dev/jobs/immobiliare.mingw/immobiliare/sources/utils.h}}
+\mbox{\hyperlink{utils_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/******************************************************************************}}
+\DoxyCodeLine{2 \textcolor{comment}{    author: Francesco Settembrini}}
+\DoxyCodeLine{3 \textcolor{comment}{    last update: 23/6/2021, 28/11/2021}}
+\DoxyCodeLine{4 \textcolor{comment}{    e-\/mail: mailto:francesco.settembrini@poliba.it}}
+\DoxyCodeLine{5 \textcolor{comment}{******************************************************************************/}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#ifndef utilsH}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define utilsH}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <algorithm>}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}../sources/maths.h"{}}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespaceutils}{utils}}}
+\DoxyCodeLine{16 \{}
+\DoxyCodeLine{17     std::string \mbox{\hyperlink{namespaceutils_ab3aaf4a1245b632b9f2261e8c2864e60}{GetExePath}}();}
+\DoxyCodeLine{18     std::string \mbox{\hyperlink{namespaceutils_a7b37ef03307840916b704a5e5d53f5db}{GetDataPath}}();}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20     \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceutils_a96b1ea4b72cf1e55ab47104ad2cde248}{FileExists}}(std::string strFileName);}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22     std::string \mbox{\hyperlink{namespaceutils_a561ebdb24d29cc4e61dd7c62ade8c9af}{LowerCase}}(std::string strString);}
+\DoxyCodeLine{23     std::string \mbox{\hyperlink{namespaceutils_afc0a4c6a8bd44cf21628f7a502344f1c}{WideToString}}(std::wstring wstrString);}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25     \textcolor{keywordtype}{bool} \mbox{\hyperlink{namespaceutils_a0f9ba6353da8f0853c566a62841d5876}{ParseDate}}(std::string strDate,}
+\DoxyCodeLine{26         \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short}\& nYear, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short}\& nMonth, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short}\& nDay);}
+\DoxyCodeLine{27             }
+\DoxyCodeLine{28     \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} \mbox{\hyperlink{namespaceutils_a187f82131c2210584e4c5e1c9bd7a038}{Shuffle}}(std::vector<T> \&Vec, \textcolor{keywordtype}{int} nHowMany)}
+\DoxyCodeLine{30     \{}
+\DoxyCodeLine{31         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<nHowMany; i++)}
+\DoxyCodeLine{32         \{}
+\DoxyCodeLine{33             \textcolor{keywordtype}{int} nFirst = \mbox{\hyperlink{namespacemaths_a672d2a2d15681fa5d7904d9210087f7a}{maths::Rand}}(0, Vec.size()-\/1);}
+\DoxyCodeLine{34             \textcolor{keywordtype}{int} nSecond = \mbox{\hyperlink{namespacemaths_a672d2a2d15681fa5d7904d9210087f7a}{maths::Rand}}(0, Vec.size()-\/1);}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36             \textcolor{keywordflow}{if}( nFirst != nSecond )}
+\DoxyCodeLine{37             \{}
+\DoxyCodeLine{38                 std::swap(Vec[nFirst], Vec[nSecond]);}
+\DoxyCodeLine{39             \}}
+\DoxyCodeLine{40         \}}
+\DoxyCodeLine{41     \}}
+\DoxyCodeLine{42 \};}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{45 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

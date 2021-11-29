@@ -1,0 +1,213 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+/*
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+*/
+#include "windows.h"
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_IMMOBILIARE         ICON                    "..\\resources\\immobiliare.ico"
+
+IDI_SMALL               ICON                    "..\\resources\\small.ico"
+
+IDI_ICON_HOUSE          ICON                    "..\\resources\\house.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_IMMOBILIARE MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        POPUP "New"
+        BEGIN
+            MENUITEM "Assets Archive",              IDM_FILE_NEW_ASSETS
+            MENUITEM "Customers Archive",           IDM_FILE_NEW_CUSTOMERS
+        END
+        POPUP "Open"
+        BEGIN
+            MENUITEM "&Assets Archive ...",         IDM_FILE_OPEN_ASSETS
+            MENUITEM "&Customers Archive ...",      IDM_FILE_OPEN_CUSTOMERS
+        END
+        POPUP "&Save"
+        BEGIN
+            MENUITEM "&Assets Archive ...",         IDM_FILE_SAVE_ASSETS
+            MENUITEM "&Customers Archive ...",      IDM_FILE_SAVE_CUSTOMERS
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_FILE_EXIT
+    END
+    POPUP "&Forms"
+    BEGIN
+        MENUITEM "&Assets ...",                 IDM_FORMS_ASSETS
+        MENUITEM "Customers ...",               IDM_FORMS_CUSTOMERS
+    END
+    POPUP "&Queries"
+    BEGIN
+        MENUITEM "Find &Assets ...",            IDM_QUERIES_FINDASSETS
+        MENUITEM "Find &Customers ...",         IDM_QUERIES_FINDCUSTOMERS
+        MENUITEM "More &Queries ...",           IDM_QUERIES_MOREQUERIES
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_HELP_ABOUT
+    END
+    POPUP "&Debug"
+    BEGIN
+        MENUITEM "&Show Debug",                 IDM_DEBUG_SHOW
+        MENUITEM SEPARATOR
+        MENUITEM "Sort &Strings",               IDM_DEBUG_SORT_STRINGS
+        MENUITEM "Sort &Integers",              IDM_DEBUG_SORT_INTEGERS
+        MENUITEM SEPARATOR
+        MENUITEM "Print &Cities ...",           ID_DEBUG_PRINT_CITIES
+        MENUITEM "Print Assets ...",            ID_DEBUG_PRINT_ASSETS
+        MENUITEM "Print Customers ...",         ID_DEBUG_PRINT_CUSTOMERS
+        MENUITEM SEPARATOR
+        MENUITEM "More &Testings ...",          IDM_DEBUG_MORE_TESTINGS
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_IMMOBILIARE ACCELERATORS
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+/*
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About immobiliare"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "immobiliare, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (c) 2021",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+*/
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_SPLASH       BITMAP                  "..\\resources\\splash.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE           "immobiliare"
+    IDC_IMMOBILIARE         "IMMOBILIARE"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+//#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+//#endif    // not APSTUDIO_INVOKED
+

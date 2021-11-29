@@ -1,0 +1,177 @@
+\hypertarget{immobiliare_8cpp}{}\doxysection{Z\+:/\+F/dev/jobs/immobiliare.mingw/immobiliare/sources/immobiliare.cpp File Reference}
+\label{immobiliare_8cpp}\index{Z:/F/dev/jobs/immobiliare.mingw/immobiliare/sources/immobiliare.cpp@{Z:/F/dev/jobs/immobiliare.mingw/immobiliare/sources/immobiliare.cpp}}
+
+
+Defines the \char`\"{}\+Immobiliare\char`\"{} application entry point.  
+
+
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}commdefs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}resource.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{immobiliare_8cpp_a2b68559d692760680c326428841254d1}{MAX\+\_\+\+LOADSTRING}}~100
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+ATOM \mbox{\hyperlink{immobiliare_8cpp_aa0d0c9beb94350f8eac8fc4026a65375}{My\+Register\+Class}} (HINSTANCE h\+Instance)
+\begin{DoxyCompactList}\small\item\em Registers the window class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{libguidll_8h_a88028fb73923716881a49ed2de40ef3e}{BOOL}} \mbox{\hyperlink{immobiliare_8cpp_a49ecdbe81d4d8d95d6a85a36717b9e00}{Init\+Instance}} (HINSTANCE h\+Instance, int n\+Cmd\+Show)
+\begin{DoxyCompactList}\small\item\em Saves instance handle and creates main window. \end{DoxyCompactList}\item 
+LRESULT CALLBACK \mbox{\hyperlink{immobiliare_8cpp_a30a1e3b0304f1b083637664cbda94e72}{Wnd\+Proc}} (HWND h\+Wnd, UINT message, WPARAM w\+Param, LPARAM l\+Param)
+\begin{DoxyCompactList}\small\item\em Processes messages for the main window. \end{DoxyCompactList}\item 
+int WINAPI \mbox{\hyperlink{immobiliare_8cpp_a649028f00e62144f15f268d14bc6dae0}{Win\+Main}} (\+\_\+\+In\+\_\+ HINSTANCE h\+Instance, \+\_\+\+In\+\_\+opt\+\_\+ HINSTANCE h\+Prev\+Instance, \+\_\+\+In\+\_\+ LPSTR lp\+Cmd\+Line, \+\_\+\+In\+\_\+ int n\+Cmd\+Show)
+\begin{DoxyCompactList}\small\item\em Windows entry-\/point for application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+HINSTANCE \mbox{\hyperlink{immobiliare_8cpp_a44f41244c97693b2fbd5244bcb1e86ec}{h\+Inst}}
+\item 
+WCHAR \mbox{\hyperlink{immobiliare_8cpp_adee9884b69dfd657d7bca6a047f122cb}{sz\+Title}} \mbox{[}\mbox{\hyperlink{immobiliare_8cpp_a2b68559d692760680c326428841254d1}{MAX\+\_\+\+LOADSTRING}}\mbox{]}
+\item 
+WCHAR \mbox{\hyperlink{immobiliare_8cpp_ac849efb3cbdf5831b7046d4d7214a704}{sz\+Window\+Class}} \mbox{[}\mbox{\hyperlink{immobiliare_8cpp_a2b68559d692760680c326428841254d1}{MAX\+\_\+\+LOADSTRING}}\mbox{]}
+\item 
+\mbox{\hyperlink{class_t_main_module}{TMain\+Module}} $\ast$ \mbox{\hyperlink{immobiliare_8cpp_a3e20cb6b57ece0d48cbfcbd2c40ec26d}{g\+\_\+p\+Main\+Module}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines the \char`\"{}\+Immobiliare\char`\"{} application entry point. 
+
+\DoxyHorRuler{0}
+ 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{immobiliare_8cpp_a2b68559d692760680c326428841254d1}\label{immobiliare_8cpp_a2b68559d692760680c326428841254d1}} 
+\index{immobiliare.cpp@{immobiliare.cpp}!MAX\_LOADSTRING@{MAX\_LOADSTRING}}
+\index{MAX\_LOADSTRING@{MAX\_LOADSTRING}!immobiliare.cpp@{immobiliare.cpp}}
+\doxysubsubsection{\texorpdfstring{MAX\_LOADSTRING}{MAX\_LOADSTRING}}
+{\footnotesize\ttfamily \#define MAX\+\_\+\+LOADSTRING~100}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{immobiliare_8cpp_a49ecdbe81d4d8d95d6a85a36717b9e00}\label{immobiliare_8cpp_a49ecdbe81d4d8d95d6a85a36717b9e00}} 
+\index{immobiliare.cpp@{immobiliare.cpp}!InitInstance@{InitInstance}}
+\index{InitInstance@{InitInstance}!immobiliare.cpp@{immobiliare.cpp}}
+\doxysubsubsection{\texorpdfstring{InitInstance()}{InitInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{libguidll_8h_a88028fb73923716881a49ed2de40ef3e}{BOOL}} Init\+Instance (\begin{DoxyParamCaption}\item[{HINSTANCE}]{h\+Instance,  }\item[{int}]{n\+Cmd\+Show }\end{DoxyParamCaption})}
+
+
+
+Saves instance handle and creates main window. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em h\+Instance} & Handle to the application instance \\
+\hline
+{\em n\+Cmd\+Show} & Specifies the appearance for main window \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true for success, false otherwise 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+In this function, we save the instance handle in a global variable and create and display the main program window. 
+\end{DoxyNote}
+\mbox{\Hypertarget{immobiliare_8cpp_aa0d0c9beb94350f8eac8fc4026a65375}\label{immobiliare_8cpp_aa0d0c9beb94350f8eac8fc4026a65375}} 
+\index{immobiliare.cpp@{immobiliare.cpp}!MyRegisterClass@{MyRegisterClass}}
+\index{MyRegisterClass@{MyRegisterClass}!immobiliare.cpp@{immobiliare.cpp}}
+\doxysubsubsection{\texorpdfstring{MyRegisterClass()}{MyRegisterClass()}}
+{\footnotesize\ttfamily ATOM My\+Register\+Class (\begin{DoxyParamCaption}\item[{HINSTANCE}]{h\+Instance }\end{DoxyParamCaption})}
+
+
+
+Registers the window class. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em h\+Instance} & Handle to the application instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns success or failure status codes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{immobiliare_8cpp_a649028f00e62144f15f268d14bc6dae0}\label{immobiliare_8cpp_a649028f00e62144f15f268d14bc6dae0}} 
+\index{immobiliare.cpp@{immobiliare.cpp}!WinMain@{WinMain}}
+\index{WinMain@{WinMain}!immobiliare.cpp@{immobiliare.cpp}}
+\doxysubsubsection{\texorpdfstring{WinMain()}{WinMain()}}
+{\footnotesize\ttfamily int WINAPI Win\+Main (\begin{DoxyParamCaption}\item[{\+\_\+\+In\+\_\+ HINSTANCE}]{h\+Instance,  }\item[{\+\_\+\+In\+\_\+opt\+\_\+ HINSTANCE}]{h\+Prev\+Instance,  }\item[{\+\_\+\+In\+\_\+ LPSTR}]{lp\+Cmd\+Line,  }\item[{\+\_\+\+In\+\_\+ int}]{n\+Cmd\+Show }\end{DoxyParamCaption})}
+
+
+
+Windows entry-\/point for application. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em h\+Instance} & Handle to the application instance \\
+\hline
+{\em h\+Prev\+Instance} & Handle to the previous application instance \\
+\hline
+{\em lp\+Cmd\+Line} & Pointer to the command line string \\
+\hline
+{\em n\+Cmd\+Show} & Modality to show for the main window \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns success or failure status codes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{immobiliare_8cpp_a30a1e3b0304f1b083637664cbda94e72}\label{immobiliare_8cpp_a30a1e3b0304f1b083637664cbda94e72}} 
+\index{immobiliare.cpp@{immobiliare.cpp}!WndProc@{WndProc}}
+\index{WndProc@{WndProc}!immobiliare.cpp@{immobiliare.cpp}}
+\doxysubsubsection{\texorpdfstring{WndProc()}{WndProc()}}
+{\footnotesize\ttfamily LRESULT CALLBACK Wnd\+Proc (\begin{DoxyParamCaption}\item[{HWND}]{h\+Wnd,  }\item[{UINT}]{message,  }\item[{WPARAM}]{w\+Param,  }\item[{LPARAM}]{l\+Param }\end{DoxyParamCaption})}
+
+
+
+Processes messages for the main window. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em h\+Wnd} & Handle to main window \\
+\hline
+{\em message} & Message Identifier \\
+\hline
+{\em w\+Param} & Message Word Int specifier \\
+\hline
+{\em l\+Param} & Message Long Int specifier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns success or failure status codes 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{immobiliare_8cpp_a3e20cb6b57ece0d48cbfcbd2c40ec26d}\label{immobiliare_8cpp_a3e20cb6b57ece0d48cbfcbd2c40ec26d}} 
+\index{immobiliare.cpp@{immobiliare.cpp}!g\_pMainModule@{g\_pMainModule}}
+\index{g\_pMainModule@{g\_pMainModule}!immobiliare.cpp@{immobiliare.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_pMainModule}{g\_pMainModule}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_main_module}{TMain\+Module}}$\ast$ g\+\_\+p\+Main\+Module = nullptr}
+
+\mbox{\Hypertarget{immobiliare_8cpp_a44f41244c97693b2fbd5244bcb1e86ec}\label{immobiliare_8cpp_a44f41244c97693b2fbd5244bcb1e86ec}} 
+\index{immobiliare.cpp@{immobiliare.cpp}!hInst@{hInst}}
+\index{hInst@{hInst}!immobiliare.cpp@{immobiliare.cpp}}
+\doxysubsubsection{\texorpdfstring{hInst}{hInst}}
+{\footnotesize\ttfamily HINSTANCE h\+Inst}
+
+\mbox{\Hypertarget{immobiliare_8cpp_adee9884b69dfd657d7bca6a047f122cb}\label{immobiliare_8cpp_adee9884b69dfd657d7bca6a047f122cb}} 
+\index{immobiliare.cpp@{immobiliare.cpp}!szTitle@{szTitle}}
+\index{szTitle@{szTitle}!immobiliare.cpp@{immobiliare.cpp}}
+\doxysubsubsection{\texorpdfstring{szTitle}{szTitle}}
+{\footnotesize\ttfamily WCHAR sz\+Title\mbox{[}\mbox{\hyperlink{immobiliare_8cpp_a2b68559d692760680c326428841254d1}{MAX\+\_\+\+LOADSTRING}}\mbox{]}}
+
+\mbox{\Hypertarget{immobiliare_8cpp_ac849efb3cbdf5831b7046d4d7214a704}\label{immobiliare_8cpp_ac849efb3cbdf5831b7046d4d7214a704}} 
+\index{immobiliare.cpp@{immobiliare.cpp}!szWindowClass@{szWindowClass}}
+\index{szWindowClass@{szWindowClass}!immobiliare.cpp@{immobiliare.cpp}}
+\doxysubsubsection{\texorpdfstring{szWindowClass}{szWindowClass}}
+{\footnotesize\ttfamily WCHAR sz\+Window\+Class\mbox{[}\mbox{\hyperlink{immobiliare_8cpp_a2b68559d692760680c326428841254d1}{MAX\+\_\+\+LOADSTRING}}\mbox{]}}
+

@@ -1,0 +1,139 @@
+\hypertarget{namespaceutils}{}\doxysection{utils Namespace Reference}
+\label{namespaceutils}\index{utils@{utils}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{namespaceutils_ab3aaf4a1245b632b9f2261e8c2864e60}{Get\+Exe\+Path}} ()
+\begin{DoxyCompactList}\small\item\em Gets the full path for the executable file. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespaceutils_a7b37ef03307840916b704a5e5d53f5db}{Get\+Data\+Path}} ()
+\begin{DoxyCompactList}\small\item\em Gets the full path for the data folder. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceutils_a0f9ba6353da8f0853c566a62841d5876}{Parse\+Date}} (std\+::string str\+Date, unsigned short \&n\+Year, unsigned short \&n\+Month, unsigned short \&n\+Day)
+\begin{DoxyCompactList}\small\item\em Parses a date string. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespaceutils_a96b1ea4b72cf1e55ab47104ad2cde248}{File\+Exists}} (std\+::string str\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Checks for file existence. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespaceutils_a561ebdb24d29cc4e61dd7c62ade8c9af}{Lower\+Case}} (std\+::string str\+Val)
+\begin{DoxyCompactList}\small\item\em Converts a string to lower case. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{namespaceutils_afc0a4c6a8bd44cf21628f7a502344f1c}{Wide\+To\+String}} (std\+::wstring wstr\+String)
+\begin{DoxyCompactList}\small\item\em Converts a wide char (unicode) string to a regular string. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T $>$ }\\void \mbox{\hyperlink{namespaceutils_a187f82131c2210584e4c5e1c9bd7a038}{Shuffle}} (std\+::vector$<$ T $>$ \&Vec, int n\+How\+Many)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceutils_a96b1ea4b72cf1e55ab47104ad2cde248}\label{namespaceutils_a96b1ea4b72cf1e55ab47104ad2cde248}} 
+\index{utils@{utils}!FileExists@{FileExists}}
+\index{FileExists@{FileExists}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{FileExists()}{FileExists()}}
+{\footnotesize\ttfamily bool utils\+::\+File\+Exists (\begin{DoxyParamCaption}\item[{std\+::string}]{str\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+Checks for file existence. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em str\+File\+Name} & The filename to check for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the file exists, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceutils_a7b37ef03307840916b704a5e5d53f5db}\label{namespaceutils_a7b37ef03307840916b704a5e5d53f5db}} 
+\index{utils@{utils}!GetDataPath@{GetDataPath}}
+\index{GetDataPath@{GetDataPath}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{GetDataPath()}{GetDataPath()}}
+{\footnotesize\ttfamily std\+::string utils\+::\+Get\+Data\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the full path for the data folder. 
+
+\DoxyHorRuler{0}
+ \begin{DoxyReturn}{Returns}
+Returns the full path to the data folder 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceutils_ab3aaf4a1245b632b9f2261e8c2864e60}\label{namespaceutils_ab3aaf4a1245b632b9f2261e8c2864e60}} 
+\index{utils@{utils}!GetExePath@{GetExePath}}
+\index{GetExePath@{GetExePath}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{GetExePath()}{GetExePath()}}
+{\footnotesize\ttfamily std\+::string utils\+::\+Get\+Exe\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the full path for the executable file. 
+
+\DoxyHorRuler{0}
+ \begin{DoxyReturn}{Returns}
+Returns the full path to the exe file name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceutils_a561ebdb24d29cc4e61dd7c62ade8c9af}\label{namespaceutils_a561ebdb24d29cc4e61dd7c62ade8c9af}} 
+\index{utils@{utils}!LowerCase@{LowerCase}}
+\index{LowerCase@{LowerCase}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{LowerCase()}{LowerCase()}}
+{\footnotesize\ttfamily std\+::string utils\+::\+Lower\+Case (\begin{DoxyParamCaption}\item[{std\+::string}]{str\+Val }\end{DoxyParamCaption})}
+
+
+
+Converts a string to lower case. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em str\+Val} & The string to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the given string in lower case 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceutils_a0f9ba6353da8f0853c566a62841d5876}\label{namespaceutils_a0f9ba6353da8f0853c566a62841d5876}} 
+\index{utils@{utils}!ParseDate@{ParseDate}}
+\index{ParseDate@{ParseDate}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{ParseDate()}{ParseDate()}}
+{\footnotesize\ttfamily bool utils\+::\+Parse\+Date (\begin{DoxyParamCaption}\item[{std\+::string}]{str\+Date,  }\item[{unsigned short \&}]{n\+Year,  }\item[{unsigned short \&}]{n\+Month,  }\item[{unsigned short \&}]{n\+Day }\end{DoxyParamCaption})}
+
+
+
+Parses a date string. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em str\+Date} & The date string \\
+\hline
+{\em n\+Year} & Reference to the Year value \\
+\hline
+{\em n\+Month} & Reference to the Month value \\
+\hline
+{\em n\+Day} & Reference to the Day value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true for success, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceutils_a187f82131c2210584e4c5e1c9bd7a038}\label{namespaceutils_a187f82131c2210584e4c5e1c9bd7a038}} 
+\index{utils@{utils}!Shuffle@{Shuffle}}
+\index{Shuffle@{Shuffle}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{Shuffle()}{Shuffle()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void utils\+::\+Shuffle (\begin{DoxyParamCaption}\item[{std\+::vector$<$ T $>$ \&}]{Vec,  }\item[{int}]{n\+How\+Many }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceutils_afc0a4c6a8bd44cf21628f7a502344f1c}\label{namespaceutils_afc0a4c6a8bd44cf21628f7a502344f1c}} 
+\index{utils@{utils}!WideToString@{WideToString}}
+\index{WideToString@{WideToString}!utils@{utils}}
+\doxysubsubsection{\texorpdfstring{WideToString()}{WideToString()}}
+{\footnotesize\ttfamily std\+::string utils\+::\+Wide\+To\+String (\begin{DoxyParamCaption}\item[{std\+::wstring}]{wstr\+String }\end{DoxyParamCaption})}
+
+
+
+Converts a wide char (unicode) string to a regular string. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em wstr\+String} & The wide char string to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the input wide char string as regular (multi byte) string 
+\end{DoxyReturn}

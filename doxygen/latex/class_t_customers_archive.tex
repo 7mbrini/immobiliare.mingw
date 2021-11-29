@@ -1,0 +1,241 @@
+\hypertarget{class_t_customers_archive}{}\doxysection{TCustomers\+Archive Class Reference}
+\label{class_t_customers_archive}\index{TCustomersArchive@{TCustomersArchive}}
+
+
+{\ttfamily \#include $<$customers.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_t_customers_archive_1_1_t_file_header}{TFile\+Header}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_customers_archive_a62bd0a67061fb69fa69d54bc2b17d927}{TCustomers\+Archive}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_customers_archive_af128a33cdcb76586916c3db6f9f29ec5}{$\sim$\+TCustomers\+Archive}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_customers_archive_ae26e2a82fa34bd6731204a063fb4bb90}{Clear}} ()
+\begin{DoxyCompactList}\small\item\em Clears the archive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_customers_archive_afac2330c7b176b21afde54621d1fc015}{Add}} (\mbox{\hyperlink{class_t_customer}{TCustomer}} $\ast$p\+Customer)
+\begin{DoxyCompactList}\small\item\em Adds a record to the archive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_customers_archive_aa0bfd66fe2d5bb91f580080271d2b5e6}{Delete}} (unsigned n\+Index)
+\begin{DoxyCompactList}\small\item\em Deletes a record from the archive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_customers_archive_ab8414ac48c0efcd74bde8321f1ff4ce4}{Update}} (unsigned n\+Index, \mbox{\hyperlink{class_t_customer}{TCustomer}} const \&Customer)
+\begin{DoxyCompactList}\small\item\em Updates a record of the archive. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_customers_archive_a3c5333015e34497683612734a309acd7}{Load\+From\+File}} (std\+::string str\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Loads archives from file. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_customers_archive_a706db25827e48bc59125acc91224b1f5}{Save\+To\+File}} (std\+::string str\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Saves archives to file. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_t_customers_archive_a6f7b3eae4ce7382c94db92e4eb50b430}{Get\+Count}} ()
+\item 
+\mbox{\hyperlink{class_t_customer}{TCustomer}} $\ast$ \mbox{\hyperlink{class_t_customers_archive_af9c26f6e957da0d383aac91674f6eb2f}{Get\+Record}} (unsigned n\+Id)
+\begin{DoxyCompactList}\small\item\em Gets a record corresponding to a given index in the archive. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_customers_archive_a54312df53666069d9dc282cb1bae64da}{Get\+Record\+Id}} (\mbox{\hyperlink{class_t_customer}{TCustomer}} $\ast$p\+Customer, unsigned \&n\+Id)
+\begin{DoxyCompactList}\small\item\em Gets the position in the archive corresponding to a specified Customer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \mbox{\hyperlink{class_t_customers_archive_a00bb83bfd91fa3378c3dbc43c8695919}{Get\+Customers}} ()
+\begin{DoxyCompactList}\small\item\em Gets the Customers contained in the archive. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} \mbox{\hyperlink{class_t_customers_archive_aa287589813454036a78196f411a87535}{m\+\_\+\+Ptr\+Customers}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_customers_archive_a62bd0a67061fb69fa69d54bc2b17d927}\label{class_t_customers_archive_a62bd0a67061fb69fa69d54bc2b17d927}} 
+\index{TCustomersArchive@{TCustomersArchive}!TCustomersArchive@{TCustomersArchive}}
+\index{TCustomersArchive@{TCustomersArchive}!TCustomersArchive@{TCustomersArchive}}
+\doxysubsubsection{\texorpdfstring{TCustomersArchive()}{TCustomersArchive()}}
+{\footnotesize\ttfamily TCustomers\+Archive\+::\+TCustomers\+Archive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_customers_archive_af128a33cdcb76586916c3db6f9f29ec5}\label{class_t_customers_archive_af128a33cdcb76586916c3db6f9f29ec5}} 
+\index{TCustomersArchive@{TCustomersArchive}!````~TCustomersArchive@{$\sim$TCustomersArchive}}
+\index{````~TCustomersArchive@{$\sim$TCustomersArchive}!TCustomersArchive@{TCustomersArchive}}
+\doxysubsubsection{\texorpdfstring{$\sim$TCustomersArchive()}{~TCustomersArchive()}}
+{\footnotesize\ttfamily TCustomers\+Archive\+::$\sim$\+TCustomers\+Archive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\DoxyHorRuler{0}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_customers_archive_afac2330c7b176b21afde54621d1fc015}\label{class_t_customers_archive_afac2330c7b176b21afde54621d1fc015}} 
+\index{TCustomersArchive@{TCustomersArchive}!Add@{Add}}
+\index{Add@{Add}!TCustomersArchive@{TCustomersArchive}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void TCustomers\+Archive\+::\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_customer}{TCustomer}} $\ast$}]{p\+Customer }\end{DoxyParamCaption})}
+
+
+
+Adds a record to the archive. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_customers_archive_ae26e2a82fa34bd6731204a063fb4bb90}\label{class_t_customers_archive_ae26e2a82fa34bd6731204a063fb4bb90}} 
+\index{TCustomersArchive@{TCustomersArchive}!Clear@{Clear}}
+\index{Clear@{Clear}!TCustomersArchive@{TCustomersArchive}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void TCustomers\+Archive\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears the archive. 
+
+\DoxyHorRuler{0}
+ \mbox{\Hypertarget{class_t_customers_archive_aa0bfd66fe2d5bb91f580080271d2b5e6}\label{class_t_customers_archive_aa0bfd66fe2d5bb91f580080271d2b5e6}} 
+\index{TCustomersArchive@{TCustomersArchive}!Delete@{Delete}}
+\index{Delete@{Delete}!TCustomersArchive@{TCustomersArchive}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily void TCustomers\+Archive\+::\+Delete (\begin{DoxyParamCaption}\item[{unsigned}]{n\+Index }\end{DoxyParamCaption})}
+
+
+
+Deletes a record from the archive. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em n\+Index} & The index of the record to delete \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_customers_archive_a6f7b3eae4ce7382c94db92e4eb50b430}\label{class_t_customers_archive_a6f7b3eae4ce7382c94db92e4eb50b430}} 
+\index{TCustomersArchive@{TCustomersArchive}!GetCount@{GetCount}}
+\index{GetCount@{GetCount}!TCustomersArchive@{TCustomersArchive}}
+\doxysubsubsection{\texorpdfstring{GetCount()}{GetCount()}}
+{\footnotesize\ttfamily int TCustomers\+Archive\+::\+Get\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\DoxyHorRuler{0}
+ Returns the count of Assets in the archive \mbox{\Hypertarget{class_t_customers_archive_a00bb83bfd91fa3378c3dbc43c8695919}\label{class_t_customers_archive_a00bb83bfd91fa3378c3dbc43c8695919}} 
+\index{TCustomersArchive@{TCustomersArchive}!GetCustomers@{GetCustomers}}
+\index{GetCustomers@{GetCustomers}!TCustomersArchive@{TCustomersArchive}}
+\doxysubsubsection{\texorpdfstring{GetCustomers()}{GetCustomers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} TCustomers\+Archive\+::\+Get\+Customers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the Customers contained in the archive. 
+
+\DoxyHorRuler{0}
+ \begin{DoxyReturn}{Returns}
+Returns a vector of pointers to the Customers 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_customers_archive_af9c26f6e957da0d383aac91674f6eb2f}\label{class_t_customers_archive_af9c26f6e957da0d383aac91674f6eb2f}} 
+\index{TCustomersArchive@{TCustomersArchive}!GetRecord@{GetRecord}}
+\index{GetRecord@{GetRecord}!TCustomersArchive@{TCustomersArchive}}
+\doxysubsubsection{\texorpdfstring{GetRecord()}{GetRecord()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_customer}{TCustomer}} $\ast$ TCustomers\+Archive\+::\+Get\+Record (\begin{DoxyParamCaption}\item[{unsigned}]{n\+Id }\end{DoxyParamCaption})}
+
+
+
+Gets a record corresponding to a given index in the archive. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em n\+Id} & The position of the record in the archive \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a pointer to an Customers object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_customers_archive_a54312df53666069d9dc282cb1bae64da}\label{class_t_customers_archive_a54312df53666069d9dc282cb1bae64da}} 
+\index{TCustomersArchive@{TCustomersArchive}!GetRecordId@{GetRecordId}}
+\index{GetRecordId@{GetRecordId}!TCustomersArchive@{TCustomersArchive}}
+\doxysubsubsection{\texorpdfstring{GetRecordId()}{GetRecordId()}}
+{\footnotesize\ttfamily bool TCustomers\+Archive\+::\+Get\+Record\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_customer}{TCustomer}} $\ast$}]{p\+Customer,  }\item[{unsigned \&}]{n\+Id }\end{DoxyParamCaption})}
+
+
+
+Gets the position in the archive corresponding to a specified Customer. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em p\+Customer} & Pointer to an Customer object \\
+\hline
+{\em n\+Id} & Reference for the position of p\+Customer in the archive \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true for success, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_customers_archive_a3c5333015e34497683612734a309acd7}\label{class_t_customers_archive_a3c5333015e34497683612734a309acd7}} 
+\index{TCustomersArchive@{TCustomersArchive}!LoadFromFile@{LoadFromFile}}
+\index{LoadFromFile@{LoadFromFile}!TCustomersArchive@{TCustomersArchive}}
+\doxysubsubsection{\texorpdfstring{LoadFromFile()}{LoadFromFile()}}
+{\footnotesize\ttfamily bool TCustomers\+Archive\+::\+Load\+From\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{str\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+Loads archives from file. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em str\+File\+Name} & The file name for Customers archives \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true for success, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_customers_archive_a706db25827e48bc59125acc91224b1f5}\label{class_t_customers_archive_a706db25827e48bc59125acc91224b1f5}} 
+\index{TCustomersArchive@{TCustomersArchive}!SaveToFile@{SaveToFile}}
+\index{SaveToFile@{SaveToFile}!TCustomersArchive@{TCustomersArchive}}
+\doxysubsubsection{\texorpdfstring{SaveToFile()}{SaveToFile()}}
+{\footnotesize\ttfamily bool TCustomers\+Archive\+::\+Save\+To\+File (\begin{DoxyParamCaption}\item[{std\+::string}]{str\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+Saves archives to file. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em str\+File\+Name} & The file name for Customers archives \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true for success, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_customers_archive_ab8414ac48c0efcd74bde8321f1ff4ce4}\label{class_t_customers_archive_ab8414ac48c0efcd74bde8321f1ff4ce4}} 
+\index{TCustomersArchive@{TCustomersArchive}!Update@{Update}}
+\index{Update@{Update}!TCustomersArchive@{TCustomersArchive}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void TCustomers\+Archive\+::\+Update (\begin{DoxyParamCaption}\item[{unsigned}]{n\+Index,  }\item[{\mbox{\hyperlink{class_t_customer}{TCustomer}} const \&}]{Customer }\end{DoxyParamCaption})}
+
+
+
+Updates a record of the archive. 
+
+\DoxyHorRuler{0}
+ 
+\begin{DoxyParams}{Parameters}
+{\em n\+Index} & The position of the record in the archive \\
+\hline
+{\em Customer} & The Customer record \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_t_customers_archive_aa287589813454036a78196f411a87535}\label{class_t_customers_archive_aa287589813454036a78196f411a87535}} 
+\index{TCustomersArchive@{TCustomersArchive}!m\_PtrCustomers@{m\_PtrCustomers}}
+\index{m\_PtrCustomers@{m\_PtrCustomers}!TCustomersArchive@{TCustomersArchive}}
+\doxysubsubsection{\texorpdfstring{m\_PtrCustomers}{m\_PtrCustomers}}
+{\footnotesize\ttfamily \mbox{\hyperlink{customers_8h_a92337c2f7ee72e5e328a5427312e1752}{TVec\+Ptr\+Customers}} TCustomers\+Archive\+::m\+\_\+\+Ptr\+Customers\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Z\+:/\+F/dev/jobs/immobiliare.\+mingw/immobiliare/sources/\mbox{\hyperlink{customers_8h}{customers.\+h}}\item 
+Z\+:/\+F/dev/jobs/immobiliare.\+mingw/immobiliare/sources/\mbox{\hyperlink{customers_8cpp}{customers.\+cpp}}\end{DoxyCompactItemize}
